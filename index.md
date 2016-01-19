@@ -16,6 +16,8 @@ layout: global
 
 <div class="container-fluid">
   <div class="row">
-    
+    <div class="col-sm-12">
+      <p>Wop wop</p>
+    </div>
   </div>
 </div>
