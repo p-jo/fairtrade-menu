@@ -1,15 +1,15 @@
 # Site settings
-title: Site name
+title: Djurens Rätt
 
 email: support@rabash.se
-description: ""
+description: "Sveriges största djurrätts- och djurskyddsorganisation"
 baseurl: ""
 twitter_username: rabashwebb
 github_username:  p-jo
 
 # Build settings
 markdown: kramdown
-relative_permalinks: true
+# relative_permalinks: true
 permalink: pretty
 
 # Defaults
