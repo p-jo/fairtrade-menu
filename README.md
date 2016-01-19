@@ -1,5 +1,5 @@
-# prototipy
-Basinstallation för prototyp med Jekyll och Bootstrap Sass
+# djurensratt.se
+HTML prototype with Jekyll och Bootstrap Sass
 
 ## Jekyll
 http://jekyllrb.com
