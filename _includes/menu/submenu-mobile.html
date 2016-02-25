@@ -1,0 +1,21 @@
+{% assign navdepth = navparts|size %}
+<ul class="nav nav-pills visible-xs">
+  {% for item in site.data.menus[page.menu].items %}
+    {% if item.url contains navparts[1] %}
+      {% for item in item.items %}
+        {% if navdepth < 3 %}
+          <li class="{% if item.url == navurl %}active{% endif %}">
+            <a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a>
+          </li>
+        {% endif %}
+        {% if item.url contains navparts[2]  %}
+          {% for item in item.items %}
+            <li class="{% if item.url == navurl %}active{% endif %}">
+              <a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a>
+            </li>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</ul>

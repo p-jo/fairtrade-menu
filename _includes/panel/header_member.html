@@ -1,0 +1,66 @@
+<header>
+
+  <nav class="navbar navbar-default navbar-small">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/">
+          <span class="glyphicon glyphicon-arrow-left"></span>&nbsp; {{ site.title }}
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-default navbar-transparent navbar-static-top" role="navigation">
+
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">{{ site.title }} Medlem</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <!-- Sök -->
+        <!--
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group hidden-sm">
+            <input type="text" class="form-control input-lg" placeholder="Sök bland medlemssidor">
+          </div>
+          <button type="submit" class="btn btn-default input-lg"><span class="glyphicon glyphicon-search"></span></button>
+        </form>
+        -->
+
+        <!-- Meny oss -->
+        <ul class="nav navbar-nav navbar-right">
+          {% for item in site.data.menus[1].items[0].items %}
+          <li><a href="{{ item.url }}">{{item.name}}</a></li>
+          {% endfor %}
+        </ul>
+
+      </div>
+
+    </div>
+  </nav>
+</header>
+
+<a id="main-content"></a>
+
+  <div class="container">
+    <div class="row padding">
+      <div class="col-sm-12">
+        <div class="input-group">
+          <input type="text" class="form-control input-lg" placeholder="Sök bland medlemssidor">
+          <span class="input-group-btn btn-group-lg">
+            <button class="btn btn-default btn-lg" type="button">Sök</button>
+          </span>
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+  </div>

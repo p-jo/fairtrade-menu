@@ -1,0 +1,40 @@
+- cat: Material
+  items:
+    - Beställ material
+    - Bössutlåning
+    - Rapporter
+    - Tidningar
+    - Beställ gratismaterial
+    - Material för lokalorganisationer
+    - Utlån av djurdräkter och vepor
+- cat: Föreningsdokument
+  items:
+    - Grafisk profil
+    - Policys
+- cat: Medlemstjänster
+  items:
+  - Adressändring
+  - Hämta app och medlemskort
+  - Hämta rabattkort till shop
+- cat: Aktivismtips
+  icon: "glyphicon glyphicon-lock"
+  items:
+  - Att skriva insändare
+  - Nyhetsbrevet Aktivist
+- cat: Värva medlemmar
+  icon: "glyphicon glyphicon-lock"
+  items:
+  - Blanketter
+  - Medlemssiffror
+  - Värvartips
+- cat: Övrigt
+  items:
+    - Reseguide
+- cat: Styrelsearbete
+  icon: "glyphicon glyphicon-lock"
+  items:
+    - Dagordning för styrelsemöte (wordmall)
+    - Protokoll för styrelsemöte (wordmall)
+    - Konstituerande styrelsemöte (wordmall)
+    - Valberedningens arbete (pdf)
+    - Guide för styrelseledamöter (pdf)

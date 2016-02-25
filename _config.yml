@@ -22,10 +22,10 @@ defaults:
       layout: "article"
   -
     scope:
-      path: "event"
-      type: "posts"
+      path: "fakta"
+      type: "pages"
     values:
-      layout: "event"
+      layout: "wiki"
   -
     scope:
       path: ""

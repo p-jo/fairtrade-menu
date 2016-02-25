@@ -5,14 +5,14 @@ layout: global
 
 {% assign navurl = page.url | remove:'index.html' %}
 {% assign navparts = page.url | split:'/' %}
-{% assign pages = site.pages | sort:"weight"  %}
 
 <div class="container">
 
   <div class="row padding">
     <div class="col-sm-12">
+      {% include misc/breadcrumb.html %}
       <h1 class="page-header">{{ page.title }}</h1>
-      <!-- {% include misc/share.html %} -->
+      {% include menu/submenu-mobile.html %}
     </div>
   </div>
 
@@ -36,42 +36,40 @@ layout: global
 
       <p>&nbsp;</p>
 
+      {% include misc/share.html %}
+
+      <hr>
+      <p><small>
+        Sidansvarig: Moa Richter Hagert &nbsp;&nbsp;&nbsp;
+        Uppdaterad: 22 februari 2016
+      </small></p>
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
     </div>
     <div class="col-sm-4 col-lg-3">
 
-      {% unless page.level %}
-      <a href="{{site.baseurl}}/program/">
-        <img data-src="holder.js/140x100/auto/text:Programbanner">
-      </a>
-      {% endunless %}
-
-
-      {% if page.level %}
-        <ul class="nav nav-pills nav-stacked">
-          {% for item in pages %}
-            {% if item.level == 0 and item.url contains navparts[1] %}
-              <li class="{% if item.url == navurl %}active{% endif %}"><a href="{{site.baseurl}}{{ item.url }}">
-                  <strong>
-                  {% if item.menu-title %}
-                    {{ item.menu-title }}
-                  {% else %}
-                    {{ item.title }}
-                  {% endif %}
-                </strong>
-              </a></li>
-            {% endif %}
-            {% if item.level == 1 and item.parent contains navparts[1] %}
-              <li class="{% if item.url == navurl %}active{% endif %}" ><a href="{{site.baseurl}}{{ item.url }}">
-                {% if item.menu-title %}
-                  {{ item.menu-title }}
-                {% else %}
-                  {{ item.title }}
-                {% endif %}
-              </a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      {% endif %}
+      <!-- Meny Om oss -->
+      <ul class="nav nav-pills nav-stacked">
+        {% for item in site.data.menus[page.menu].items %}
+          <li class="{% if item.url == navurl %}active{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}"><strong>{{ item.name }}</strong></a></li>
+          {% if item.url contains navparts[1] %}
+            {% for item in item.items %}
+              <li class="{% if item.url == navurl %}active{% endif %}">
+                <a href="{{ site.baseurl }}{{ item.url }}">&nbsp;{{ item.name }}</a>
+              </li>
+              {% if item.url contains navparts[2] %}
+                {% for item in item.items %}
+                  <li class="{% if item.url == navurl %}active{% endif %}">
+                    <a href="{{ site.baseurl }}{{ item.url }}">&nbsp; -- {{ item.name }}</a>
+                  </li>
+                {% endfor %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+      </ul>
 
       <p>&nbsp;</p>
 

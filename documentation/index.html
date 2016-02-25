@@ -1,19 +1,11 @@
 ---
 layout: default
-title: Struktur och skisser
+title: Sidmallar och menyer
 
-grafiskaelement:
-  - title: Symboler
-    status: warning
-    skisser:
-      - dir: 2014-11-06
-        items:
-        - type: Desktop och mobil
-          file: LUG_symboler
 ---
 
 <div class="container" >
-  
+
   <div class="col-sm-12">
     <div class="page-header">
       <h1>{{site.title }} <small>{{ page.title }}</small></h1>
@@ -31,29 +23,24 @@ grafiskaelement:
     <tr>
       <th>Titel</th>
       <th>URL</th>
-      <th>Prototyp</th>
-      <th>Skisser</th>
     </tr>
   </thead>
   <tbody>
-    {% assign pages = site.pages | sort: 'weight' %} 
+    {% assign pages = site.pages | sort: 'weight' %}
     {% for item in pages %}
       {% if item.type == 'ingang' %}
         <tr class="{% if item.status %}{{item.status}}{% endif %}">
-          <td>{{item.description}}</td>
+          <td><a href="{{site.baseurl}}{{item.url}}">{{item.description}}</a></td>
           <td>{{item.url}}</td>
-          <td><a href="{{site.baseurl}}{{item.url}}">{{item.prototyp}}</a></td>
-          <td>
-            {% include documentation/mockups.html item=item files='skisser' %}
-          </td>
         </tr>
-        {% endif %}
+      {% endif %}
     {% endfor %}
   </tbody>
 </table>
 <p>&nbsp;</p>
 
 <!-- Vyer -->
+<!--
 <h3>Vyer, listor</h3>
 <p class=""></p>
 <table class="table">
@@ -83,6 +70,7 @@ grafiskaelement:
 <p>&nbsp;</p>
 
 <hr>
+-->
 
 
 
@@ -94,25 +82,21 @@ grafiskaelement:
 
 <h3>Statiska sidor</h3>
 <p class=""></p>
+
 <table class="table">
   <thead>
     <tr>
       <th>Titel</th>
       <th>Exempel-URL</th>
-      <th>Prototyp</th>
-      <th>Skisser</th>
     </tr>
   </thead>
   <tbody>
-    {% for item in site.pages %}
-      {% if item.url == '/om-oss/' %}
-        <tr class="{{item.status}}">
-          <td>{{item.title}}</td>
+    {% assign pages = site.pages | sort: 'weight' %}
+    {% for item in pages %}
+      {% if item.type == 'static' %}
+        <tr class="{% if item.status %}{{item.status}}{% endif %}">
+          <td><a href="{{site.baseurl}}{{item.url}}">{{item.description}}</a></td>
           <td>{{item.url}}</td>
-          <td><a href="{{site.baseurl}}{{item.url}}">{{item.title}}</a></td>
-          <td>
-            {% include documentation/mockups.html item=item files='skisser' %}
-          </td>
         </tr>
       {% endif %}
     {% endfor %}
@@ -127,8 +111,6 @@ grafiskaelement:
     <tr>
       <th>Titel</th>
       <th>Exempel-URL</th>
-      <th>Prototyp</th>
-      <th>Skisser</th>
     </tr>
   </thead>
   <tbody>
@@ -138,12 +120,8 @@ grafiskaelement:
         {% assign name = item.categories[0] | remove:'type-' %}
 
         <tr class="{% if item.status %}{{item.status}}{% endif %}">
-          <td>{{name}}</td>
+          <td><a href="{{site.baseurl}}{{item.url}}">{{name}}</a></td>
           <td>{{item.url}}</td>
-          <td><a href="{{site.baseurl}}{{item.url}}">{{item.title}}</a></td>
-          <td>
-            {% include documentation/mockups.html item=item files='skisser' %}
-          </td>
         </tr>
       {% endif %}
     {% endfor %}
@@ -195,7 +173,7 @@ grafiskaelement:
 <p>&nbsp;</p>
 -- >
 <!-- Grafiska element -->
-
+<!--
 <h3 id="grafiskaelement">Grafiska element</h3>
 <p class=""></p>
 <table class="table">
@@ -218,7 +196,7 @@ grafiskaelement:
 </table>
 <p>&nbsp;</p>
 <hr>
-
+-->
 
 
 
@@ -226,75 +204,65 @@ grafiskaelement:
 
 <h2 id="menyval">Menyer</h2>
 
-{% assign pages = site.pages | sort:"weight"  %}
-
 {% for menu in site.data.menus %}
-{% if menu.documentation %}
-  <p>&nbsp;</p>
-  <h3>{{menu.title}}</h3>
-  <p>{{menu.description}}</p>
+  {% if menu.documentation %}
+    <p>&nbsp;</p>
+    <h3>{{menu.title}}</h3>
+    <p>{{menu.description}}</p>
 
-  <table class="table">
-  <thead>
-    <tr>
-      <th>Titel</th>
-      <th>URL</th>
-    </tr>
-  </thead>
-  <tbody>
-
-    {% for item in menu.items %}
-      <tr>
-        <td>
-          {% if item.url %}<a href="{{site.baseurl}}{{item.url}}">{% endif %}
-            {{item.name}}
-          {% if item.url %}</a>{% endif %}
-          </td>
-        <td>{{item.url}}</a></td>
-      </tr>
-
-      {% for post in pages %}
-        {% if post.level == 1 and post.parent == item.url %}
-          <tr>
-            <td>&nbsp; – &nbsp;
-              <a href="{{site.baseurl}}{{post.url}}">
-                {% if post.menu-title %}
-                  {{ post.menu-title }}
-                {% else %}
-                  {{ post.title }}
-                {% endif %}
-              </a>
-            </td>
-            <td>{{post.url}}</a></td>
-          </tr>
-
-          {% for post2 in pages %}
-            {% if post2.level == 2 and post2.parent == post.url %}
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Titel</th>
+              <th>URL</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in menu.items %}
               <tr>
-                <td>&nbsp; –– &nbsp;
-                  <a href="{{site.baseurl}}{{post2.url}}">
-                    {% if post2.menu-title %}
-                      {{ post2.menu-title }}
-                    {% else %}
-                      {{ post2.title }}
-                    {% endif %}
-                  </a>
+                <td>
+                  {% if item.url %}<a href="{{site.baseurl}}{{item.url}}">{% endif %}
+                    {{item.name}}
+                  {% if item.url %}</a>{% endif %}
                 </td>
-                <td>{{post2.url}}</a></td>
+                <td>{{item.url}}</a></td>
               </tr>
-            {% endif %}
-          {% endfor %}
+              {% for item in item.items %}
+                <tr>
+                  <td>&nbsp; – &nbsp;
+                    {% if item.url %}<a href="{{site.baseurl}}{{item.url}}">{% endif %}
+                      {{item.name}}
+                    {% if item.url %}</a>{% endif %}
+                  </td>
+                  <td>{{item.url}}</a></td>
+                </tr>
+                {% for item in item.items %}
+                  <tr>
+                    <td>&nbsp; –– &nbsp;
+                      {% if item.url %}<a href="{{site.baseurl}}{{item.url}}">{% endif %}
+                        {{item.name}}
+                      {% if item.url %}</a>{% endif %}
+                    </td>
+                    <td>{{item.url}}</a></td>
+                  </tr>
+                  {% for item in item.items %}
+                    <tr>
+                      <td>&nbsp; –––– &nbsp;
+                        {% if item.url %}<a href="{{site.baseurl}}{{item.url}}">{% endif %}
+                          {{item.name}}
+                        {% if item.url %}</a>{% endif %}
+                      </td>
+                      <td>{{item.url}}</a></td>
+                    </tr>
+                  {% endfor %}
+                {% endfor %}
+              {% endfor %}
+            {% endfor %}
+          </tbody>
+        </table>
 
-        {% endif %}
-
-      {% endfor %}
-    {% endfor %}
-
-  </tbody>
-</table>
-<hr>
-
-{% endif %}
+    <hr>
+  {% endif %}
 {% endfor %}
 
 
@@ -304,7 +272,7 @@ grafiskaelement:
 </div>
 <div class="col-md-2">
   <div id="nav-scroll">
-    <ul class="nav nav-pills nav-stacked hidden-xs" data-spy="affix" data-offset-top="20" data-offset-bottom="">
+    <ul class="nav nav-pills nav-stacked hidden-xs" data-spy="" data-offset-top="20" data-offset-bottom="">
 
       <li><a href="#ingangssidor">Ingångssidor</a></li>
       <li><a href="#artikeltyper">Artikeltyper</a></li>

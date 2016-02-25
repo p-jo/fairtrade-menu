@@ -1,23 +1,30 @@
 ---
 layout: global
+type: ingang
+description: Startsida
+weight: 0
 
 ---
 
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12 col-lg-10 col-lg-offset-1 text-center">
-        <h1>{{site.title}}</h1>
-        <p>{{site.description}}</p>
-      </div>
-    </div>
-  </div>
-</div>
+<div class="container-fluid" id="front">
 
-<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-12">
-      <p>Wop wop</p>
-    </div>
+    {% for item in site.posts limit:1 %}
+      {% include node/teaser.html col=12 %}
+    {% endfor %}
   </div>
+
+  <div class="row">
+    {% for item in site.posts limit:2 offset:1 %}
+      {% include node/teaser.html col=6 %}
+    {% endfor %}
+  </div>
+
+  <div class="row">
+    {% for item in site.posts limit:6 offset:3 %}
+      {% include node/teaser.html col=4 %}
+    {% endfor %}
+  </div>
+
+
 </div>

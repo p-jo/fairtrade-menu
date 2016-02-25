@@ -1,0 +1,158 @@
+- name: Arvika
+  desc: Välkommen till Djurens Rätt Arvika!
+- name: Boden
+  desc: Boden ingår i lokalavdelningen Boden-Luleå.
+- name: Bollnäs
+  desc: Välkommen till Djurens Rätt i Bollnäs! Kontakta oss gärna om du vill ha mer information.
+- name: Borås
+  desc: Välkommen till Djurens Rätt i Borås. Kontakta oss gärna för mer information om oss och vår verksamhet.
+- name: Båstad
+  desc: Djurens Rätt lokalavdelning i Båstad, ingår i lokalavdelningen Båstad-Ängelholm.
+- name: Eskilstuna
+  desc: I Eskilstuna finns Djurens Rätt representera med en kontaktperson.
+- name: Falkenberg
+  desc: Falkenberg ingår i lokalgruppen Halmstad-Falkenberg.
+- name: Falköping
+  desc: Falköping ingår i Djurens Rätt Skaraborg.
+- name: Falun
+  desc: Djurens Rätts lokalavdelning i Falun är en av organisationens äldsta, den bildades redan den 30 januari 1963.
+- name: Gotland
+  desc: Djurens Rätt finns såklart också representerade på Sveriges största ö.
+- name: Gävle
+  desc: Djurens Rätts lokalavdelning i Gävle-Sandviken är en av de äldre avdelningarna och bildades redan 1962.
+- name: Göteborg
+  desc: Välkommen till Djurens Rätt i Göteborg, landets näst största lokalavdelning.
+- name: Götene
+  desc: Götene ingår i Djurens Rätt Skaraborg.
+- name: Hallstahammar
+  desc: Hallstahammar ingår i lokalavdelningen Västerås-Hallstahammar-Surahammar.
+- name: Halmstad-Falkenberg
+  desc: Djurens Rätts lokala verksamheter i Halmstad och Falkenberg är organiserade i en gemensam lokalgrupp.
+- name: Hammarö
+  desc: Hammarö ingår i lokalavdelningen Karlstad-Hammarö.
+- name: Helsingborg
+  desc: I Helsingborg finns en aktiv och engagerad lokalavdelning.
+- name: Hjo
+  desc: Hjo ingår i Djurens Rätt Skaraborg.
+- name: Hudiksvall
+  desc: Djurens Rätt lokalavdelning i Hudiksvall
+- name: Hultsfred
+  desc: I Hultsfred finns en kontaktperson som representerar Djurens Rätt.
+- name: Hässleholm
+  desc: Djurens Rätt har en kontaktperson i Hässleholm.
+- name: Höganäs
+  desc: Höganäs ingår i lokalavdelningen Helsingborg-Höganäs.
+- name: Järfälla
+  desc: Djurens Rätt har en kontaktperson i Järfälla
+- name: Jönköping
+  desc: Djurens Rätt i Jönköping är lokalavdelningen vid Vätterns södra spets. Verksamheten i Jönköping grundades 1974.
+- name: Kalmar
+  desc: Välkommen till Djurens Rätt Kalmar. Kontakta oss gärna för mer information om oss och vår verksamhet. Du kan skriva till oss på kalmar@djurensratt.se.
+- name: Karlsborg
+  desc: Karlsborg ingår i Djurens Rätt Skaraborg.
+- name: Karlshamn
+  desc: Karlshamn ingår i samma lokalgrupp som Ronneby.
+- name: Karlskrona
+  desc: Välkommen till Djurens Rätt i Karlskrona! Vill du bli medlem? Kanske göra något som aktiv medlem? Kontakta oss!
+- name: Karlstad
+  desc: Välkommen till Djurens Rätt Karlstad-Hammarö. Här på våra lokala sidor kan du få information om oss och se vad som händer i avdelningen.
+- name: Kinda
+  desc: Djurens Rätt lokalavdelning i Kinda.
+- name: Kiruna
+  desc: Djurens Rätt har sedan i september 2015 en ny kontaktperson i Kiruna.
+- name: Knivsta
+  desc: Knivsta ingår i lokalavdelningen Uppsala-Knivsta.
+- name: Kristianstad
+  desc: Välkommen till Djurens Rätt i Kristianstad.
+- name: Linköping
+  desc: Vi är en lokalavdelning av Djurens Rätt, Sveriges största djurrättsorganisation med mer än 35 000 medlemmar, varav ca 600 i Linköping.
+- name: Lomma
+  desc: I Lomma finns inte bara en, utan två kontaktpersoner för Djurens Rätt.
+- name: Luleå
+  desc: Djurens Rätt lokalavdelning i Luleå innefattar även Boden, och bildades under namnet "Norrbottenskretsen" 1971.
+- name: Lund
+  desc: Välkommen till Djurens Rätt Lunds hemsida! Vi är en lokalavdelning inom Djurens Rätt och arbetar med djurrättsfrågor i Lunds kommun.
+- name: Malmö
+  desc: Djurens Rätt är Sveriges största djurrättsorganisation. Vi består av drygt 180 lokalorganisationer runtom i landet och en riksorganisationen i Stockholm. En av dessa lokalorganisationer finns i Malmö.
+- name: Malå
+  desc: Djurens Rätt har sedan i september 2015 en ny kontaktperson i Malå.
+- name: Mariestad
+  desc: Mariestad ingår i Djurens Rätt Skaraborg.
+- name: Markaryd
+  desc: I Markaryd finns i dagsläget ingen lokal verksamhet.
+- name: Mora
+  desc: Mora ingår i den lokala verksamhet som innefattar Mora och Orsa.
+- name: Motala
+  desc: Det var i Motala som Djurens Rätt första lokalavdelning bildades, 1959.
+- name: Norrköping
+  desc: Vi träffas ungefär en gång i månaden centralt i Norrköping. Om du vill att djuren ska ha det bättre kom på en av våra träffar så hittar vi på något tillsammans.
+- name: Nykvarn
+  desc: Nykvarn ingår i lokalavdelningen Södertälje-Nykvarn.
+- name: Nyköping
+  desc: Välkommen till Djurens Rätt i Nyköping! Kontakta oss gärna för mer information om oss och vår verksamhet.
+- name: Orsa
+  desc: Välkommen till Djurens Rätt i Orsa. Kontakta oss gärna för mer information om oss och vår verksamhet.
+- name: Ronneby-Karlshamn
+  desc: Djurens Rätt i Ronneby-Karlshamn är en grupp i olika åldrar som jobbar aktivt. Vi har nu funnits sedan hösten 2007.
+- name: Sandviken
+  desc: Sandviken ingår i lokalavdelningen Gävle-Sandviken.
+- name: Sigtuna
+  desc: Djurens Rätt har en kontaktperson i den lokala verksamhet som innefattar Sigtuna och Upplands Väsby.
+- name: Skara
+  desc: Skara ingår i Djurens Rätt Skaraborg.
+- name: Skaraborg
+  desc: Djurens Rätt Skaraborg innefattar orterna Falköping och Skövde med omnejd.
+- name: Skurup
+  desc: Skurup ingår in lokalgruppen Ystad-Skurup.
+- name: Skövde
+  desc: Djurens Rätt lokalavdelning i Skövde
+- name: Stockholm
+  desc: Huvudstadens djurrättsrörelse - djurrättsrörelsens huvudstad.
+- name: Sundsvall
+  desc: Djurens Rätts lokala verksamhet i Sundsvall bildades 1982 och i Timrå bildades verksamheten 24 februari 1992.
+- name: Surahammar
+  desc: Surahammar ingår i lokalavdelningen Västerås-Hallstahammar-Surahammar.
+- name: Söderköping
+  desc: Söderköping ingår i lokalavdelningen Norrköping-Söderköping.
+- name: Södertälje
+  desc: Vi är en lokalavdelning av Djurens Rätt, med ca. 400 av Djurens Rätts medlemmar.
+- name: Tibro
+  desc: Tibro ingår i Djurens Rätt Skaraborg.
+- name: Tidaholm
+  desc: Tidaholm ingår i Djurens Rätt Skaraborg.
+- name: Timrå
+  desc: Timrå ingår i lokalavdelningen Sundsvall-Timrå.
+- name: Trollhättan
+  desc: Djurens Rätts lokalavdelning i Trollhättan bildades 1978, och senare tillkom även Vänersborg.
+- name: Töreboda
+  desc: Töreboda ingår i Djurens Rätt Skaraborg.
+- name: Umeå
+  desc: Djurens Rätt Umeå anordnar mässan Vegovision men även har umgängesträffar, korvgrillning, bokcirklar, filmvisningar och även utåtriktat arbete som infobord, broschyrutdelning och demonstrationer.
+- name: Upplands Väsby
+  desc: Upplands Väsby ingår i lokalgruppen Sigtuna-Upplands Väsby.
+- name: Uppsala
+  desc: Djurens Rätts lokalavdelning i Uppsala bildades ursprungligen 20 april 1961.
+- name: Vadstena
+  desc: Vadstena tillhör lokalavdelningen i Motala-Vadstena.
+- name: Vara
+  desc: Vara ingår i Djurens Rätt Skaraborg.
+- name: Vårgårda
+  desc: Du som vill vara aktiv i Vårgårda är varmt välkommen till gruppen i Alingsås, som även omfattar Herrljunga.
+- name: Vänersborg
+  desc: Vänersborg ingår i lokalavdelningen Trollhättan-Vänersborg.
+- name: Västerås
+  desc: Västeråsavdelningen av Djurens Rätt har funnits sedan 1970-talet. Avdelningen innefattar förutom Västerås också Hallstahammar och Surahammar.
+- name: Växjö
+  desc: Välkommen till Djurens Rätts lokalavdelning i Växjö. Vi är idag en ganska liten lokalavdelning men försöker ändå vara så aktiv som möjligt.
+- name: Ystad
+  desc: Välkommen till Djurens Rätt i Ystad-Skurup! Kontakta oss gärna för mer information om oss och vår verksamhet.
+- name: Åtvidaberg
+  desc: Djurens Rätt lokalavdelning i Åtvidaberg
+- name: Ängelholm
+  desc: Välkommen till Djurens Rätt Båstad och Ängelholm. Kontakta oss gärna för mer information om oss och vår verksamhet.
+- name: Örebro
+  desc: Välkommen till Djurens Rätt Örebro!
+- name: Östersund
+  desc: Djurens Rätt Östersund består av en kontaktperson som har Östersunds kommun som ansvarsområde.
+- name: Överkalix
+  desc: I Överkalix finns en kontaktperson för Djurens Rätt.

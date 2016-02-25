@@ -1,0 +1,22 @@
+<div class="modal fade modal-fullscreen" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ul style="list-style-type:none;">
+            {% for item in site.data.menus[7].items %}
+                <li><a href="{{base.url}}{{ item.url }}"><h3>{{item.name}}</h3></a></li>
+            {% endfor %}
+            {% for item in site.data.menus[2].items %}
+                <li><a href="{{base.url}}{{ item.url }}"><h4>{{item.name}}</h4></a></li>
+            {% endfor %}
+            {% for item in site.data.menus[8].items %}
+                <li><a href="{{base.url}}{{ item.url }}"><h4>{{item.name}}</h4></a></li>
+            {% endfor %}
+        </ul>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

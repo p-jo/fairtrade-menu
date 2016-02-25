@@ -1,0 +1,10 @@
+<div class="{% if include.col < 12 %}col-md-6 {% endif %} col-lg-{{include.col}}  teaser bg-{% cycle 'success', 'info', 'warning', 'danger' %}">
+  <a href="{{site.baseurl}}{{item.url}}">
+
+    <h3>{{item.header}}</h3>
+    <h2>{{item.title}}</h2>
+  </a>
+  <p>
+    <a class="btn btn-default btn-lg" href="{{item.url}}">{{item.action}}</a>
+  </p>
+</div>

@@ -1,0 +1,37 @@
+---
+layout: global
+
+title: Lär dig mer
+excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+
+status: none
+type: ingang
+description: Lär dig mer
+weight: 10
+
+---
+
+<div class="container-fluid">
+
+  <div class="row">
+    {% for item in site.data.menus[0].items[1].items %}
+      <div class="col-sm-4 col-md-3">
+        <a href="{{ site.baseurl }}{{ item.url }}">
+          <img data-src="holder.js/500x200/auto/text:illustration">
+          <h3>{{item.name}} <span class="{{item.icon}}"></span></h3>
+        </a>
+        <div class="list-group hidden-xs">
+          {% for item in item.items limit:5 %}
+            <a href="#" class="list-group-item">{{item.name}}</a>
+          {% endfor %}
+        </div>
+        <p class="hidden-xs"><a href="{{ site.baseurl }}{{ item.url }}">Läs alla artiklar</a></p>
+        <p>&nbsp;</p>
+      </div>
+      {% cycle '', '', '', '<div class="clearfix visible-md visible-lg"></div>' %}
+    {% endfor %}
+  </div>
+
+  <hr>
+
+</div>

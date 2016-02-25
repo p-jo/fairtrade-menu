@@ -1,0 +1,152 @@
+- name: Djurförsök
+  items:
+    - name: Vad tycker Djurens Rätt?
+    - name: Vad är djurförsök?
+    - name: Hur många djur?
+    - name: Djurförsök inom olika områden
+    - name: Smärta och annat lidande
+    - name: Istället för djurförsök
+    - name: Uppfödning, avel och hållning
+    - name: Läs mer om djurförsök
+- name: Djuretik
+  items:
+    - name: Vad tycker Djurens Rätt?
+    - name: Vad gör Djurens Rätt
+    - name: Teorier inom etiken
+    - name: Läs mer
+- name: Djur i livsmedelsindustrin
+  items:
+    - name: Vad tycker Djurens Rätt?
+    - name: Fiskar och andra vattenlevande djur
+      items:
+        - name: Förmåga till lidande hos fiskar
+        - name: Förmåga till lidande hos ryggradslösa djur
+    - name: Grisar
+    - name: Hönor & tuppar
+    - name: Kalkoner
+    - name: Kaniner
+      items:
+        - name: Naturligt beteende hos kaniner
+    - name: Kor, kalvar & tjurar
+      items:
+        - name: Hanteringen av mjölkkalvar
+    - name: Kycklingar
+    - name: Får och lamm
+    - name: Renar
+    - name: Bin
+    - name: Andra djur i livsmedelsindustrin
+      items:
+        - name: Transport och slakt av hästar
+    - name: Transporter
+    - name: Slakt
+      items:
+        - name: 'Internationellt: Slakt utan bedövning'
+    - name: Läs mer
+- name: Djur i pälsindustrin
+  items:
+    - name: Vad tycker Djurens Rätt?
+    - name: Minkar
+    - name: Chinchillor
+    - name: Rävar
+    - name: Läs mer
+- name: Djur som familjemedlemmar
+  items:
+    - name: Vad tycker Djurens Rätt?
+    - name: Exotiska djur
+    - name: Fiskar
+    - name: Fåglar
+      items:
+        - name: 'Fördjupning: Fåglar som familjemedlemmar'
+    - name: Hundar
+    - name: Grisar som familjedjur
+    - name: Hästar
+    - name: Kaniner och gnagare
+    - name: Djursmuggling
+    - name: Katter
+      items:
+        - name: Katters naturliga beteende och behov
+    - name: Zoohandel
+- name: Djur som underhållning
+  items:
+    - name: Vad tycker Djurens Rätt?
+    - name: Djurparker
+    - name: Cirkus
+    - name: Spel och tävling
+    - name: Film och reklam
+    - name: Läs mer
+- name: Djurs mentala förmågor
+  items:
+    - name: Vad tycker Djurens Rätt?
+    - name: Medvetande och upplevelseförmåga
+    - name: Vänskap, empati och sorg
+    - name: Glädje, skratt och lek
+    - name: Tidsuppfattning, minne och planering
+    - name: Läs mer
+- name: Djurvänlig konsument
+  items:
+    - name: Vad tycker Djurens Rätt?
+    - name: Livsmedel
+    - name: Skinn
+      items:
+        - name: Djurvänliga skor och andra skinnprodukter
+    - name: Päls
+    - name: Ull
+      items:
+        - name: Angorafritt
+        - name: Istället för ull
+        - name: Djurplågeri i ullindustrin, företagens respons
+    - name: Dun & fjädrar
+      items:
+        - name: Istället för dun
+        - name: Dunuppföljning del 1
+        - name: Dunuppföljning del 2
+    - name: Djurtestat
+      items:
+        - name: Fördjupat om kosmetikaförbudet
+    - name: Silke
+    - name: Läs mer
+- name: Jakt
+  items:
+    - name: Vad tycker Djurens Rätt?
+    - name: Jakt i Sverige
+    - name: Kritiserade jaktformer
+    - name: Skadeskjutningar
+    - name: Läs mer
+- name: Juridik
+  items:
+    - name: Vad tycker Djurens Rätt?
+    - name: Djuren och rättvisan
+    - name: Hur anmäler man brott mot djur?
+    - name: Vad gör Djurens Rätt
+      items:
+        - name: Djurens Rätts arbete för ett förbud mot sexuella övergrepp mot djur
+    - name: Läs mer
+- name: Samhällsbyggande och miljö
+  items:
+    - name: Vad tycker Djurens Rätt?
+    - name: Jordbruk och skogsbruk
+    - name: Vägar och järnvägar
+    - name: Städer och samhällen
+    - name: Miljö
+    - name: 'Vind- name: och vattenkraftverk'
+    - name: Läs mer
+- name: Internationellt arbete
+  items:
+    - name: Vad tycker Djurens Rätt
+    - name: Djurförsök i Europa och världen
+    - name: Djur i livsmedelsindustrin
+      items:
+        - name: Hajfening
+        - name: 'Produktion av ank- name: och gåslever'
+        - name: Slakt utan bedövning
+    - name: Djur som underhållning
+    - name: Jakt
+      items:
+        - name: 'Fördjupning: Säljakt'
+    - name: EU-lagstiftning
+      items:
+        - name: Lista över aktuell djurskyddslagstiftning i Europa
+    - name: Samarbeten
+    - name: Läs mer
+    - name: Här hittar du organisationer i andra länder
+    - name: Tips för dig som vill åka som volontär och hjälpa djur
