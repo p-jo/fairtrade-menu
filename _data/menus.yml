@@ -1,6 +1,5 @@
 - title: Huvudmeny
-  description: 'Huvudavdelningarna på sajten. Allt under Engagera dig har "calls to action" - bli medlem, ge pengar, bli volontär osv.
-   Under Lär dig mer finns all fördjupande information om djurrätt.'
+  description: 'Huvudavdelningarna på sajten.'
   id: 0
   documentation: true
   items:
