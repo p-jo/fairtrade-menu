@@ -8,7 +8,7 @@ action-text: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis
 media: Bild
 
 categories:
-  - type-kampanj
+  - type-blogg
 
 status: none
 permalink: /kampanj/sommarturnen-borjar-snart/
