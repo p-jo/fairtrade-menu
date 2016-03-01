@@ -11,7 +11,7 @@ categories:
   - type-blogg
 
 status: none
-permalink: /kampanj/sommarturnen-borjar-snart/
+permalink: /blogg/sommarturnen-borjar-snart/
 
 form:
   - id: namn
