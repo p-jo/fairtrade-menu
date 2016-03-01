@@ -46,7 +46,19 @@
           </div>
         {% endfor %}
       </div>
+    </div>
+  </div>
 
+  <div class="row">
+    <div class="col-sm-6">
+      <!-- Direktlänkar -->
+      <small>
+      {% for item in site.data.menus[10].items %}
+        <a href="{{site.baseurl}}{{ item.url }}">{{item.name}}</a> /
+      {% endfor %}
+      </small>
+    </div>
+    <div class="col-sm-6">
       <!-- Följ oss -->
       <ul class="nav nav-pills pull-right">
         {% for item in site.data.menus[3].items %}
@@ -54,7 +66,6 @@
         {% endfor %}
       </ul>
     </div>
-
   </div>
 
   <div class="row">

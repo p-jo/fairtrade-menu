@@ -1,12 +1,12 @@
 - cat: Material
   items:
     - Beställ material
-    - Bössutlåning
     - Rapporter
     - Tidningar
     - Beställ gratismaterial
     - Material för lokalorganisationer
     - Utlån av djurdräkter och vepor
+    - Bössutlåning
 - cat: Föreningsdokument
   items:
     - Grafisk profil
@@ -38,3 +38,7 @@
     - Konstituerande styrelsemöte (wordmall)
     - Valberedningens arbete (pdf)
     - Guide för styrelseledamöter (pdf)
+- cat: Riksstämmor
+  items:
+    - Riksstämman 2015
+    - Handlingar till riksstämman

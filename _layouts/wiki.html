@@ -52,7 +52,7 @@ layout: global
 
       <!-- Meny Om oss -->
       <ul class="nav nav-pills nav-stacked">
-        {% for item in site.data.menus[0].items[1].items %}
+        {% for item in site.data.menus[page.menu].items[page.submenu].items %}
           {% if item.url contains navparts[1] %}
             <li class="{% if item.url == navurl %}active{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}"><strong>{{ item.name }}</strong></a></li>
             {% for item in item.items %}

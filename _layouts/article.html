@@ -75,6 +75,18 @@ layout: global
 
 </div>
 
+<div class="container-fluid">
+
+  <div class="row">
+    {% for item in site.posts limit:6 %}
+      {% include node/teaser.html col=4 %}
+    {% endfor %}
+  </div>
+
+
+</div>
+
+
 
 
 <div class="modal modal-fullscreen" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">

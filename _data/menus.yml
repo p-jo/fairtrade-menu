@@ -5,11 +5,10 @@
   documentation: true
   items:
     - name: Engagera dig
+      url: /engagera-dig/
       items:
         - name: Engagera dig
           items:
-            - name: Bli medlem
-            - name: Starta en insamling
             - name: Bli medlem
             - name: Starta en insamling
             - name: Engagera dig lokalt
@@ -21,10 +20,10 @@
                 - name: Kickoff
                 - name: Turnéplan
                 - name: Vanliga frågor
-            - name: Bli volontär
             - name: Juniortidningen Rädda Djuren
             - name: Gratisex av tidningen
             - name: Beställ material
+            - name: Beställ gratismaterial
             - name: Shop
         - name: Stöd oss
           items:
@@ -33,18 +32,25 @@
             - name: Testamentera
             - name: Minnesgåva
         - name: Konsument
+          url: /engagera-dig/konsument/
           items:
             - name: Medlemsrabatter
-            - name: Handla djurvänligt
             - name: 100% veganskt
             - name: Icke djurtestat
+              url: /engagera-dig/konsument/icke-djurtestat/
+              items:
+                - name: Vilka krav måste märkena uppfylla?
+                - name: Standarden HCS (kosmetika)
+                - name: Standarden HHPS (rengöringsprodukter)
+                - name: Vanliga frågor
+                - name: För företag
             - name: Pälsfri handel
             - name: Sveriges vegovänligaste mataffär
             - name: Appen Djurvänligt
             - name: Gratis magasin
             - name: Vegokoll-bloggen
     - name: Lär dig mer
-      url: /fakta/
+      url: /lar-dig-mer/
       items:
         - name: Djurförsök
           items:
@@ -154,7 +160,7 @@
             - name: Silke
             - name: Läs mer
         - name: Jakt
-          url: /fakta/jakt/
+          url: /lar-dig-mer/jakt/
           items:
             - name: Vad tycker Djurens Rätt?
             - name: Jakt i Sverige
@@ -234,11 +240,6 @@
             - name: Framgångar
             - name: Ordförande
         - name: Förbundsordförande
-        - name: Riksstämmor
-          items:
-            - name: RIKSSTÄMMOR 2011-2015
-              items:
-                - name: Handlingar till riksstämman
         - name: Lediga tjänster
     - name: Kontakt
       items:
@@ -256,13 +257,6 @@
       items:
         - name: Samarbetspartners
         - name: Märkning av produkter
-    - name: Fondansökan
-      items:
-        - name: Chickas minnesfond
-        - name: Djur som fått hjälp
-        - name: Skicka ansökan
-        - name: Utbetalda bidrag
-        - name: Inkomna gåvor
 
 - title: Följ oss
   description: Sociala medier och andra sätt att följa organisationen
@@ -290,7 +284,8 @@
   id: 4
   documentation: true
   items:
-    - name: Appen Djurvänligt
+  #  - name: Appen Djurvänligt
+    - name: Shop
     - name: Vegokoll
     - name: Djurens Rätts blogg
     - name: Rädda Djuren-klubben
@@ -315,10 +310,11 @@
   id: 7
   items:
   - name: Engagera dig
+    url: /engagera-dig/
   - name: Stöd oss
   - name: Handla djurvänligt
   - name: Lär dig mer
-    url: /fakta/
+    url: /lar-dig-mer/
 
 - title: Mobil Sekundär meny
   description: "Tillägg till sekundär meny i mobilläge"
@@ -338,3 +334,17 @@
   - name: Årsmöte 2016
   - name: Vegoguide Göteborg
   - name: Kontakt
+
+- title: Direktlänkar
+  description: "Mindre prioriterade länkar med information för specifika målgrupper."
+  id: 10
+  documentation: true
+  items:
+    - name: Fondansökan
+      items:
+        - name: Chickas minnesfond
+        - name: Djur som fått hjälp
+        - name: Skicka ansökan
+        - name: Utbetalda bidrag
+        - name: Inkomna gåvor
+    - name: Lediga tjänster (den typen av länkar)

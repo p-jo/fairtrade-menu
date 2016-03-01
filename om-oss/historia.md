@@ -2,8 +2,6 @@
 title: "Historia"
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
 
-menu: 2
-
 status: none
 type: static
 description: Statisk sida
