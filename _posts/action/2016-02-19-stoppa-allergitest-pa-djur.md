@@ -1,10 +1,13 @@
 ---
+layout: action
 title: "Stoppa allergitest på djur"
 header: "En överrubrik"
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
 action: "Skriv till regeringen"
 media: Bild
 
+categories:
+  - type-blixtaktion
 ---
 
 Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.

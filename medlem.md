@@ -2,7 +2,8 @@
 layout: member
 title: Medlem
 ingress: 'Har du frågor om ditt medlemskap? Saknar du ditt medlemsnummer eller medlemskort?
-Vill du höja ditt stöd via autogiro? <a href="">Här kan du kontakta medlemsservice</a>. Det går också att ringa på 08-555 914 40.'
+Vill du höja ditt stöd via autogiro? <a href="">Här kan du kontakta medlemsservice</a>. Det går också att ringa på 08-555 914 40.<br>
+Inte medlem än? <a>Bli medlem här</a>.'
 
 type: ingang
 description: Medlemssidor

@@ -16,6 +16,12 @@ permalink: pretty
 defaults:
   -
     scope:
+      path: "action"
+      type: "posts"
+    values:
+      layout: "action"
+  -
+    scope:
       path: ""
       type: "posts"
     values:

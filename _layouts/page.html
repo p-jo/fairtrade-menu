@@ -29,9 +29,11 @@ layout: global
 
       {{ content }}
 
-      {% if page.form %}
+      {% if page.action %}
         <p>&nbsp;</p>
-        {% include form/form-horizontal.html form=page.form %}
+        <p class="text-center">
+          <a href="" class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#modalForm">{{page.action}}</a>
+        </p>
       {% endif %}
 
       <p>&nbsp;</p>
@@ -40,7 +42,6 @@ layout: global
 
       <hr>
       <p><small>
-        Sidansvarig: Moa Richter Hagert &nbsp;&nbsp;&nbsp;
         Uppdaterad: 22 februari 2016
       </small></p>
 
@@ -77,3 +78,5 @@ layout: global
     </div>
   </div>
 </div>
+
+{% include modal/action.html %}

@@ -1,4 +1,5 @@
 ---
+layout: action
 title: "Stoppa fyrverkerier som skadar"
 header: "Sluta smälla"
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."

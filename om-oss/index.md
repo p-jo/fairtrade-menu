@@ -7,6 +7,34 @@ status: none
 type: static
 description: Statisk sida
 
+
+
+action: "Bli medlem idag"
+action-header: Bli medlem
+action-text: "Som månadsgivare kan du som fyllt 18 år betala en valfri summa (från 35 kr) i månaden via autogiro. Med ditt regelbundna stöd skapar du en trygghet som gör att vi kan arbeta långsiktigt. Det är också det mest kostnadseffektiva sättet att stödja Djurens Rätt.
+
+Du kan när som helst ändra beloppet du ger genom att kontakta medlemsservice."
+
+form:
+  - id: namn
+    type: text
+    title: Namn
+  - id: postnummer
+    type: text
+    title: Postnummer
+  - id: ort
+    type: text
+    title: Ort
+  - id: epost
+    type: email
+    title: Epost
+  - id: newsletter
+    type: checkbox
+    options:
+      - id: 1
+        name: Jag vill ha mer information från Djurens Rätt
+        checked: checked
+
 ---
 
 Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.

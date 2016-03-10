@@ -21,53 +21,26 @@ layout: global
   <div class="row">
     <div class="col-md-8 col-md-offset-2">
 
-      {{page.content}}
+      {{content}}
 
       <p>&nbsp;</p>
       <!--
         <p><strong>{{page.date | date: "%-d %B %Y" }}</strong></p>
       -->
 
-      <p class="text-center">
-        <a href="" class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#modalForm">{{page.action}}</a>
-      </p>
+      {% unless page.categories contains 'type-blixtaktion' %}
+        <p class="text-center">
+          <a href="" class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#modalForm">{{page.action}}</a>
+        </p>
 
-      <p class="text-center">
-        {% include misc/share.html %}
-      </p>
+        <p class="text-center">
+          {% include misc/share.html %}
+        </p>
+
+      {% endunless %}
+
 
       <hr>
-
-      {% if page.categories contains 'type-blixtaktion' %}
-
-      <h3>Senaste underskrifterna (av 9373 st)</h3>
-
-      <p>
-        <strong>Mikael Holmbom</strong>, stockholm<br>
-        <em>24 februari 2016</em>
-        <em>finns inget argument varför det skulle få finnas</em>
-      </p>
-      <p>
-        <strong>Mikael Holmbom</strong>, stockholm<br>
-        <em>24 februari 2016</em>
-        <em>finns inget argument varför det skulle få finnas</em>
-      </p>
-      <p>
-        <strong>Mikael Holmbom</strong>, stockholm<br>
-        <em>24 februari 2016</em>
-        <em>finns inget argument varför det skulle få finnas</em>
-      </p>
-      <p>
-        <strong>Mikael Holmbom</strong>, stockholm<br>
-        <em>24 februari 2016</em>
-        <em>finns inget argument varför det skulle få finnas</em>
-      </p>
-      <p>
-        <strong>Mikael Holmbom</strong>, stockholm<br>
-        <em>24 februari 2016</em>
-        <em>finns inget argument varför det skulle få finnas</em>
-      </p>
-      {% endif %}
 
     </div>
 
@@ -87,34 +60,4 @@ layout: global
 </div>
 
 
-
-
-<div class="modal modal-fullscreen" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h1 class="modal-title">{{page.action-header}}</h4>
-      </div>
-      <div class="modal-body">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <p class="">
-                {{page.action-text}}
-              </p>
-              <br>
-              {% include form/form-horizontal.html form = page.form %}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <p class="text-center">
-          <button type="button" class="btn btn-link" data-dismiss="modal">Avbryt</button> &nbsp;&nbsp;&nbsp;
-          <button type="button" class="btn btn-primary">{{page.action}}</button>
-        </p>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+{% include modal/action.html %}

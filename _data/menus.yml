@@ -9,7 +9,6 @@
         - name: Engagera dig
           items:
             - name: Bli medlem
-            - name: Starta en insamling
             - name: Engagera dig lokalt
             - name: Nyhetsbrev
             - name: Sommarturné
@@ -19,24 +18,22 @@
                 - name: Kickoff
                 - name: Turnéplan
                 - name: Vanliga frågor
-            - name: Juniortidningen Rädda Djuren
-            - name: Gratisex av tidningen
+          # - name: Gratisex av tidningen
             - name: Beställ material
-            - name: Beställ gratismaterial
-            - name: Shop
+          # - name: Beställ gratismaterial
         - name: Stöd oss
           items:
             - name: Ge en gåva
-            - name: (Bli månadsgivare)
+          #  - name: (Bli månadsgivare)
+            - name: Starta en insamling
             - name: Testamentera
             - name: Minnesgåva
-        - name: Konsument
-          url: /engagera-dig/konsument/
+        - name: Handla djurvänligt
+          url: /engagera-dig/handla-djurvanligt/
           items:
-            - name: Medlemsrabatter
-            - name: 100% veganskt
+            - name: Vegokoll-bloggen
             - name: Icke djurtestat
-              url: /engagera-dig/konsument/icke-djurtestat/
+              url: /engagera-dig/handla-djurvanligt/icke-djurtestat/
               items:
                 - name: Vilka krav måste märkena uppfylla?
                 - name: Standarden HCS (kosmetika)
@@ -44,10 +41,11 @@
                 - name: Vanliga frågor
                 - name: För företag
             - name: Pälsfri handel
-            - name: Sveriges vegovänligaste mataffär
-            - name: Appen Djurvänligt
-            - name: Gratis magasin
-            - name: Vegokoll-bloggen
+            - name: Gratis inspirationsmagasin
+            - name: Shop
+            - name: Märkningen 100% veganskt
+            - name: Appar
+            - name: Medlemsrabatter
     - name: Lär dig mer
       url: /lar-dig-mer/
       items:
@@ -175,15 +173,15 @@
               items:
                 - name: Djurens Rätts arbete för ett förbud mot sexuella övergrepp mot djur
             - name: Läs mer
-        - name: Samhällsbyggande och miljö
-          items:
-            - name: Vad tycker Djurens Rätt?
-            - name: Jordbruk och skogsbruk
-            - name: Vägar och järnvägar
-            - name: Städer och samhällen
-            - name: Miljö
-            - name: 'Vind- name: och vattenkraftverk'
-            - name: Läs mer
+      #  - name: Samhällsbyggande och miljö
+      #    items:
+      #      - name: Vad tycker Djurens Rätt?
+      #      - name: Jordbruk och skogsbruk
+      #      - name: Vägar och järnvägar
+      #      - name: Städer och samhällen
+      #      - name: Miljö
+      #      - name: 'Vind- name: och vattenkraftverk'
+      #      - name: Läs mer
         - name: Internationellt arbete
           items:
             - name: Vad tycker Djurens Rätt
@@ -204,6 +202,11 @@
             - name: Läs mer
             - name: Här hittar du organisationer i andra länder
             - name: Tips för dig som vill åka som volontär och hjälpa djur
+        - name: Djurvänlig turism
+          items:
+            - name: Djurens verklighet i turisternas paradis
+            - name: En djurvänlig turist
+            - name: Hjälp djuren
 
 
 - title: Medlem
@@ -229,6 +232,7 @@
   id: 2
   documentation: true
   items:
+    - name: Vanliga frågor
     - name: Om oss
       url: /om-oss/
       items:
@@ -236,7 +240,7 @@
           url: /om-oss/historia/
           items:
             - name: Bildande
-            - name: Framgångar
+          #  - name: Framgångar
             - name: Ordförande
         - name: Förbundsordförande
         - name: Lediga tjänster
@@ -248,7 +252,7 @@
         - name: Förbundsstyrelsen
         - name: Ledningsgruppen
         - name: Personal
-        - name: Valberedningen
+      #  - name: Valberedningen
         - name: Verksamhetsrevisorer
         - name: Lämna formell synpunkt på vår verksamhet
     - name: Press
@@ -283,10 +287,10 @@
   id: 4
   documentation: true
   items:
-  #  - name: Appen Djurvänligt
+    - name: Appar
     - name: Shop
     - name: Vegokoll
-    - name: Djurens Rätts blogg
+  #  - name: Djurens Rätts blogg
     - name: Rädda Djuren-klubben
 
 - title: Banners engagera dig

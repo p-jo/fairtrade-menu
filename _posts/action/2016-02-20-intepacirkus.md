@@ -1,4 +1,5 @@
 ---
+layout: action
 title: "#INTEPÅCIRKUS"
 header: "Ny kampanj"
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
@@ -6,6 +7,7 @@ action: "Skriv under uppropet"
 media: Bild
 action-header: "Skriv under #INTEPÅCIRKUS"
 action-text: "Jag är bestört över att djurförsök för hushållsprodukter fortfarande är tillåtet i EU. Jag uppmanar EU:s lagstiftare att införa ett heltäckande förbud mot djurförsök för hushållsprodukter, inkluderat dess ingredienser, på samma sätt som det har gjorts för djurförsök för kosmetika."
+ingress: "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
 
 categories:
   - type-blixtaktion
@@ -17,12 +19,6 @@ form:
   - id: namn
     type: text
     title: Namn
-  - id: visanamn
-    type: checkbox
-    options:
-      - id: 1
-        name: Visa inte mitt namn
-        checked: ""
   - id: postnummer
     type: text
     title: Postnummer
@@ -32,9 +28,12 @@ form:
   - id: epost
     type: email
     title: Epost
+  - id: tel
+    type: tel
+    title: Telefon
   - id: land
     type: text
-    title: Land
+    title: Land (frivilligt)
   - id: comment
     type: textarea
     title:  Varför skriver du under? (frivilligt)
@@ -44,11 +43,11 @@ form:
       - id: 1
         name: Jag vill ha mer information från Djurens Rätt
         checked: checked
-
+      - id: 2
+        name: Visa mitt namn och kommentar
+        checked: ""
 
 ---
-
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.
 
 Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur.
 

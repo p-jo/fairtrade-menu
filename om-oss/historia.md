@@ -1,6 +1,7 @@
 ---
 title: "Historia"
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+media: Bild
 
 status: none
 type: static
