@@ -8,6 +8,7 @@ media: Bild
 
 categories:
   - type-blixtaktion
+  - front
 ---
 
 Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.

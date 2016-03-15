@@ -9,6 +9,7 @@ media: Bild
 
 categories:
   - type-blogg
+  - front
 
 form:
   - id: namn

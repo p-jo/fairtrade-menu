@@ -1,8 +1,20 @@
-<a href="{{site.baseurl}}{{item.url}}">
-  <h3>{{item.title}}</h3>
-</a>
-<p>
-  <strong>{{ item.date | date: "%-d %B %Y" }}</strong>
-  {{item.excerpt}}
-</p>
+<div class="row">
+  <div class="col-sm-2">
+    {% if item.author %}
+      <img data-src="holder.js/100x100/auto/text:Bild" class="img-circle hidden-xs">
+      </small></p>
+    {% endif %}
+  </div>
+  <div class="col-sm-10">
+    <a href="{{site.baseurl}}{{item.url}}">
+      <h4>{{item.title}}</h4>
+    </a>
+    <p>
+      {{ item.date | date: "%-d %B %Y" }} &nbsp;
+      {{item.author}} {{item.job}} <br>
+
+      {{item.excerpt}}
+    </p>
+  </div>
+</div>
 <hr>

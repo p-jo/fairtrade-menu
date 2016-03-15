@@ -1,0 +1,58 @@
+---
+layout: global
+
+---
+
+{% assign navurl = page.url | remove:'index.html' %}
+{% assign navparts = page.url | split:'/' %}
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h1 class="page-header">{{ page.title }}</h1>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+
+  <div class="row">
+    {% for item in site.data.menus[page.menu].items[page.submenu].items %}
+      {% if item.url contains navparts[2] %}
+        {% for item in item.items %}
+          <div class="col-sm-6 col-md-4 teaser bg-{% cycle 'success', 'info', 'warning', 'danger' %}">
+            <a href="{{ site.baseurl }}{{ item.url }}"><h3>{{ item.name }}</h3></a>
+            <p>Cake gummies oat cake powder toffee brownie chupa chups. Apple pie muffin cookie sweet cake jujubes.</p>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<div class="container">
+
+  <p>&nbsp;</p>
+
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Blixtaktioner</h3>
+      <br>
+      {% for item in site.categories.type-blixtaktion %}
+        {% include node/teaser_list_simple.html %}
+      {% endfor %}
+
+      <p><a href="/engagera-dig/blixtaktioner/" class="btn btn-default">Alla blixtaktioner</a></p>
+
+    </div>
+
+    <div class="col-sm-6">
+      <h3>Kampanjer</h3>
+      <br>
+      {% for item in site.categories.kampanj %}
+        {% include node/teaser_list_simple.html %}
+      {% endfor %}
+
+      <p><a href="/engagera-dig/kampanjer/" class="btn btn-default">Alla kampanjer</a></p>
+    </div>
+  </div>
+</div>

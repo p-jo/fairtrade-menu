@@ -8,6 +8,7 @@ media: Bild
 
 categories:
   - type-blixtaktion
+  - front
 
 ---
 

@@ -6,7 +6,16 @@
     - name: Engagera dig
       url: /engagera-dig/
       items:
-        - name: Engagera dig
+        - name: Stöd oss
+          url: /engagera-dig/stod-oss/
+          items:
+            - name: Ge en gåva
+          #  - name: (Bli månadsgivare)
+            - name: Starta en insamling
+            - name: Testamentera
+            - name: Minnesgåva
+        - name: Bli aktiv
+          url: /engagera-dig/bli-aktiv/
           items:
             - name: Bli medlem
             - name: Engagera dig lokalt
@@ -21,13 +30,6 @@
           # - name: Gratisex av tidningen
             - name: Beställ material
           # - name: Beställ gratismaterial
-        - name: Stöd oss
-          items:
-            - name: Ge en gåva
-          #  - name: (Bli månadsgivare)
-            - name: Starta en insamling
-            - name: Testamentera
-            - name: Minnesgåva
         - name: Handla djurvänligt
           url: /engagera-dig/handla-djurvanligt/
           items:

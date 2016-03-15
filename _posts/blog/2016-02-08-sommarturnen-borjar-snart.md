@@ -9,6 +9,7 @@ media: Bild
 
 categories:
   - type-blogg
+  - front
 
 status: none
 permalink: /blogg/sommarturnen-borjar-snart/

@@ -10,27 +10,13 @@ layout: global
 
   <div class="row">
     <div class="col-sm-12 text-center">
-
-      <!--
-        <div class="well lead text-center">
-          <a href="#">{{page.cat}}</a>
-        </div>
-      -->
-
-        <h1 class="page-header">{{ page.title }}</h1>
-        <!--
-        <p><small>
-          Sidansvarig: Moa Richter Hagert &nbsp;&nbsp;&nbsp;
-          Uppdaterad: 22 februari 2016
-        </small></p>
-      -->
+      <h1 class="page-header">{{ page.title }}</h1>
       <p>&nbsp;</p>
 
       {% for item in site.categories.type-blixtaktion limit:1%}
         {% include node/teaser_action_small.html %}
       {% endfor %}
       <p>&nbsp;</p>
-
     </div>
   </div>
 
@@ -38,11 +24,8 @@ layout: global
     <div class="col-sm-8 col-lg-7 col-md-offset-2">
 
       <p class="lead">{{page.ingress}}</p>
-
-
       {{ content }}
       {% include misc/share.html %}
-
 
       {% if page.form %}
         <p>&nbsp;</p>
@@ -102,24 +85,8 @@ layout: global
 
       <p>&nbsp;</p>
 
-
     </div>
   </div>
-  <!--
-  <div class="row">
-    <div class="col-md-6">
-      <h2>Aktuellt</h2>
-      {% for item in site.categories.type-blogg %}
-        {% include node/teaser_list.html %}
-      {% endfor %}
-
-    </div>
-    <div class="col-md-6">
-      <h2>Vanliga frågor</h2>
-      {% include misc/faq.html faqId=wiki posts=site.categories.type-faq %}
-    </div>
-  </div>
-  -->
 </div>
 
 {% include panel/related_articles.html %}

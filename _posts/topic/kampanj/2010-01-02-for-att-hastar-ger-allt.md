@@ -1,41 +1,11 @@
 ---
-title: "Rekordår för djurens rätt"
-header: "Vi växer så det knakar"
+layout: topic
+title: För att hästar ger allt
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
-action: "Bli medlem idag"
-action-header: Bli medlem
-action-text: "Som månadsgivare kan du som fyllt 18 år betala en valfri summa (från 35 kr) i månaden via autogiro. Med ditt regelbundna stöd skapar du en trygghet som gör att vi kan arbeta långsiktigt. Det är också det mest kostnadseffektiva sättet att stödja Djurens Rätt.
-
-Du kan när som helst ändra beloppet du ger genom att kontakta medlemsservice."
-author: Camilla Björkbom
-job: Förbundsordförande
 
 categories:
-  - type-blogg
-  - front
-
-status: none
-permalink: /blogg/rekordar-for-djurens-ratt/
-
-form:
-  - id: namn
-    type: text
-    title: Namn
-  - id: postnummer
-    type: text
-    title: Postnummer
-  - id: ort
-    type: text
-    title: Ort
-  - id: epost
-    type: email
-    title: Epost
-  - id: newsletter
-    type: checkbox
-    options:
-      - id: 1
-        name: Jag vill ha mer information från Djurens Rätt
-        checked: checked
+  - type-tema
+  - kampanj
 
 ---
 

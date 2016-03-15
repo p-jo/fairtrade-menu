@@ -11,6 +11,7 @@ ingress: "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Mo
 
 categories:
   - type-blixtaktion
+  - front
 
 status: none
 permalink: /blixtaktion/intepacirkus/

@@ -1,15 +1,14 @@
 ---
-title: Handla djurvänligt
+layout: topic
+title: Hönan eller ägget?
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
 
-menu: 0
-submenu: 0
-
-status: none
-type: static
-description: Fakta
+categories:
+  - type-tema
+  - kampanj
 
 ---
+
 
 Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.
 

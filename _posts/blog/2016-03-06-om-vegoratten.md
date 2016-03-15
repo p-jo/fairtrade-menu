@@ -1,9 +1,11 @@
 ---
-title: "Hjälp! Veganer på middag"
-header: "Ny kokbok"
+title: "Om vegorätten innehåller kött - har du rätt till skadestånd?"
+header: "Vi växer så det knakar"
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
-action: "Beställ kokboken"
-media: Bild
+author: Peter Nilsson
+job: Kampanjsamordnare
+categories:
+  - type-blogg
 
 ---
 
