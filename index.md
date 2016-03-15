@@ -26,5 +26,14 @@ weight: 0
     {% endfor %}
   </div>
 
-
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h2>Aktuellt</h2>
+      {% for item in site.categories.type-blogg %}
+        {% include node/teaser_list.html %}
+      {% endfor %}
+    </div>
+  </div>
 </div>
