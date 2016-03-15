@@ -1,0 +1,33 @@
+<div class="dropdown-menu dropdown-menu-large dropdown-{{include.id}}">
+  <div class="container">
+    <div class="row">
+      {% for item in item.items limit:12 %}
+        <div class="col-sm-4 col-md-3">
+          <ul class="nav nav-pills nav-stacked">
+            <li>
+              <a href="{{ site.baseurl }}{{ item.url }}">
+                <!-- Illustrationer i meny Lär dig mer -->
+                {% if item.image %}
+                  <p><img data-src="holder.js/500x200/auto/text:illustration"></p>
+                {% endif %}
+                <strong>{{ item.name }}</strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-sm-12">
+        <ul class="nav nav-pills">
+          {% for item in item.items offset:12 %}
+            <li><a href="{{ site.baseurl }}{{ item.url }}">
+              <strong>{{ item.name }} ></strong>
+            </a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

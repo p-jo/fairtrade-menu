@@ -11,20 +11,26 @@ layout: global
   <div class="row">
     <div class="col-sm-12 text-center">
 
+      <!--
         <div class="well lead text-center">
           <a href="#">{{page.cat}}</a>
         </div>
+      -->
 
         <h1 class="page-header">{{ page.title }}</h1>
-        {% include misc/tags.html %}
-        <p>&nbsp;</p>
+        <!--
+        <p><small>
+          Sidansvarig: Moa Richter Hagert &nbsp;&nbsp;&nbsp;
+          Uppdaterad: 22 februari 2016
+        </small></p>
+      -->
+      <p>&nbsp;</p>
 
-      <!--
       {% for item in site.categories.type-blixtaktion limit:1%}
         {% include node/teaser_action_small.html %}
       {% endfor %}
       <p>&nbsp;</p>
-      -->
+
     </div>
   </div>
 
@@ -35,14 +41,7 @@ layout: global
 
 
       {{ content }}
-
       {% include misc/share.html %}
-
-      <hr>
-      <p><small>
-        Sidansvarig: Moa Richter Hagert &nbsp;&nbsp;&nbsp;
-        Uppdaterad: 22 februari 2016
-      </small></p>
 
 
       {% if page.form %}
@@ -75,17 +74,21 @@ layout: global
         </div>
       {% endif %}
 
-      <h3>Vanliga frågor <!--  om {{page.cat}}--></h3>
+      <h3>Vanliga frågor om {{page.cat}}</h3>
       {% include misc/faq.html faqId=wiki posts=site.categories.type-faq %}
 
       <p>&nbsp;</p>
+
+      <div class="well">
+        <a href=""><h4>På Vegokoll.se hittar du mer om djurvänligt mode</h4></a>
+      </div>
 
 
     </div>
     <div class="col-sm-4 col-lg-3">
 
       <!-- Fler texter -->
-        <h4>Läs mer <!--  om {{page.cat}} --> </h4>
+        <h4>Läs mer om {{page.cat}}</h4>
         <ul class="nav nav-pills nav-stacked">
           {% for item in site.categories.[page.cat] limit:7 %}
             <li>

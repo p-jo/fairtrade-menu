@@ -12,7 +12,7 @@ layout: global
         <p>&nbsp;</p>
       {% endif %}
 
-      <a href="{{site.baseurl}}{{page.url}}"><h1>{{page.title}}</h1></a>
+      <h1>{{page.title}}</h1>
       <p>&nbsp;</p>
 
     </div>
@@ -48,16 +48,6 @@ layout: global
 
 </div>
 
-<div class="container-fluid">
-
-  <div class="row">
-    {% for item in site.posts limit:6 %}
-      {% include node/teaser.html col=4 %}
-    {% endfor %}
-  </div>
-
-
-</div>
-
+{% include panel/related_articles.html %}
 
 {% include modal/action.html %}

@@ -1,8 +1,18 @@
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <br>
+      <p class="lead">Har du fått nog av trånga hönsburar, långa djurtransporter och plågsamma djurförsök? &nbsp; <a class="btn btn-primary btn-lg" href="#">Bli månadgivare</a></p>
+    </div>
+  </div>
+</div>
 
 <hr>
 
 <footer class="container">
-
+  <!--
   <div class="row padding">
     <div class="col-sm-2">
       <img data-src="holder.js/300x150/auto/text:{{site.title}}" class="img-rounded">
@@ -11,52 +21,34 @@
       <h3>{{site.description}}</h3>
     </div>
   </div>
+  -->
 
   <div class="row padding">
-
-    <div class="col-sm-6">
-      <div class="row">
-        <div class="col-sm-4">
-          <ul class="nav nav-pills nav-stacked">
-            {% for item in site.data.menus[2].items %}
-              <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="col-sm-6">
-          <p>Djurens Rätt<br>
-          Box 17132<br>
-          104 62 Stockholm</p>
-          <p>Tel: 08 - 555 914 00<br>
-          Fax: 08 - 555 914 50<br>
-          info@djurensratt.se</p>
-          <p>Orgnr: 802002-4496<br>
-          PlusGiro: 901087-7</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-6">
-      <div class="row">
-        {% for item in site.data.menus[4].items %}
-          <div class="col-sm-6 padding">
-            <p><a href="{{ site.baseurl }}{{ item.url }}">
-              <img data-src="holder.js/500x200/auto/text:{{ item.name }}">
-            </a></p>
-          </div>
+    <div class="col-sm-12 text-center">
+      <ul class="nav nav-pills">
+        {% for item in site.data.menus[2].items %}
+          <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a></li>
         {% endfor %}
-      </div>
+      </ul>
     </div>
   </div>
 
   <div class="row">
+    {% for item in site.data.menus[4].items %}
+      <div class="col-sm-3 padding">
+        <p><a href="{{ site.baseurl }}{{ item.url }}">
+          <img data-src="holder.js/500x200/auto/text:{{ item.name }}">
+        </a></p>
+      </div>
+    {% endfor %}
+  </div>
+
+
+  <div class="row">
     <div class="col-sm-6">
-      <!-- Direktlänkar -->
-      <small>
-      {% for item in site.data.menus[10].items %}
-        <a href="{{site.baseurl}}{{ item.url }}">{{item.name}}</a> /
-      {% endfor %}
-      </small>
+      <p>Djurens Rätt, Box 17132, 104 62 Stockholm<br>
+      Tel: 08 - 555 914 00, Fax: 08 - 555 914 50, info@djurensratt.se<br>
+      Orgnr: 802002-4496, PlusGiro: 901087-7</p>
     </div>
     <div class="col-sm-6">
       <!-- Följ oss -->
@@ -70,11 +62,16 @@
 
   <div class="row">
     <div class="col-sm-12">
+
+      <!-- Direktlänkar -->
+      <p>
+      {% for item in site.data.menus[10].items %}
+        <a href="{{site.baseurl}}{{ item.url }}">{{item.name}}</a> /
+      {% endfor %}
+    </p>
+
       <p><small>
         Allt innehåll © {{ 'now' | date: "%Y" }} {{ site.title }} om inte annat anges.
-        {% for item in site.data.menus[6].items %}
-          <a href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a>&nbsp;
-        {% endfor %}
       </small></p>
     </div>
   </div>

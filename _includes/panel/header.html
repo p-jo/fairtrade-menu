@@ -33,7 +33,12 @@
             {% if item.items %}
               <li class="dropdown dropdown-large">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>{{ item.name }} </h4> <span class="glyphicon  glyphicon-menu-down"></span></a>
-                  {% include menu/main.html id=forloop.index %}
+                  {% case forloop.index %}
+                  {% when 1 %}
+                    {% include menu/engagera-dig.html id=forloop.index %}
+                  {% when 2 %}
+                    {% include menu/lar-dig-mer.html id=forloop.index %}
+                  {% endcase %}
               </li>
             {% endif %}
           {% endfor %}

@@ -22,6 +22,12 @@ defaults:
       layout: "action"
   -
     scope:
+      path: "wiki"
+      type: "posts"
+    values:
+      layout: "wiki"
+  -
+    scope:
       path: ""
       type: "posts"
     values:
@@ -31,7 +37,7 @@ defaults:
       path: "lar-dig-mer"
       type: "pages"
     values:
-      layout: "wiki"
+      layout: "topic"
       menu: 0
       submenu: 1
   -
@@ -39,7 +45,7 @@ defaults:
       path: "engagera-dig"
       type: "pages"
     values:
-      layout: "wiki"
+      layout: "topic"
       menu: 0
       submenu: 0
   -
