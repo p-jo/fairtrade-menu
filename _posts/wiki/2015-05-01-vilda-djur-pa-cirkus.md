@@ -3,7 +3,7 @@ layout: wiki
 title: Vilda djur på cirkus
 subtitle: Opinionsundersökning
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
-cat: Jakt
+cat: jakt
 layout: wiki
 
 categories:

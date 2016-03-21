@@ -8,6 +8,7 @@ media: Bild
 action-header: "Skriv under #INTEPÅCIRKUS"
 action-text: "Jag är bestört över att djurförsök för hushållsprodukter fortfarande är tillåtet i EU. Jag uppmanar EU:s lagstiftare att införa ett heltäckande förbud mot djurförsök för hushållsprodukter, inkluderat dess ingredienser, på samma sätt som det har gjorts för djurförsök för kosmetika."
 ingress: "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros."
+cat: jakt
 
 categories:
   - type-blixtaktion
