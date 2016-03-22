@@ -87,6 +87,10 @@ a h6 {
   padding-top: 150px;
 }
 
+.col-lg-6.teaser {
+  min-height: 440px;
+}
+
 @media (min-width: $screen-sm-min) {
   .col-lg-12.teaser {
     padding-top: 300px;
