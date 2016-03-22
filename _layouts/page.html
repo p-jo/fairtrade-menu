@@ -8,26 +8,44 @@ layout: global
 
 <div class="container">
 
-  <div class="row padding">
-    <div class="col-sm-12">
-      {% include misc/breadcrumb.html %}
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      {% if page.categories contains 'type-wiki' %}
+        <div class="well lead text-center">
+          <a href="#">{{page.cat}}</a>
+        </div>
+      {% endif %}
+
       <h1 class="page-header">{{ page.title }}</h1>
       {% include menu/submenu-mobile.html %}
+      {% include misc/tags.html %}
+
+      {% if page.blixtaktion %}
+        {% for item in site.categories.type-blixtaktion limit:1%}
+          {% include node/teaser_action_small.html %}
+        {% endfor %}
+      {% endif %}
+
+      <p>&nbsp;</p>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-sm-8 col-lg-7">
+    <div class="col-md-8 col-lg-7 col-lg-offset-2">
 
       {% if page.media %}
         <p>
-          <img data-src="holder.js/140x100/auto/text:{{page.media}}">
+          <img data-src="holder.js/150x100/auto/text:{{page.media}}">
           <p><small>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</small></p>
         </p>
         <p>&nbsp;</p>
       {% endif %}
 
+      <p class="lead">{{page.ingress}}</p>
+
+
       {{ content }}
+
 
       {% if page.action %}
         <p>&nbsp;</p>
@@ -42,41 +60,99 @@ layout: global
 
       <hr>
       <p><small>
+        {% if page.categories %}
+          Sidansvarig: Moa Richter Hagert &nbsp;&nbsp;&nbsp;
+        {% endif %}
         Uppdaterad: 22 februari 2016
       </small></p>
 
       <p>&nbsp;</p>
-      <p>&nbsp;</p>
+
+      {% if page.references %}
+        <div class="panel-group" id="faq-parent-ref">
+          <div class="panel panel-transparent">
+            <div class="panel-heading">
+              <h3 class="panel-title">
+                <a data-toggle="collapse" data-parent="#faq-parent-ref" href="#faq-{% increment questionId %}">
+                  Källor >
+                </a>
+              </h3>
+            </div>
+            <div id="faq-{% increment answerId %}" class="panel-collapse collapse">
+              <div class="panel-body">
+                <ol>
+                {% for item in page.references %}
+                  <li>{{item}}</li>
+                {% endfor %}
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      {% if page.categories %}
+        <h3>Vanliga frågor <!--  om {{page.cat}}--></h3>
+        {% include misc/faq.html faqId=wiki posts=site.categories.type-faq %}
+      {% endif %}
+
+      {% if page.banner %}
+        <div class="well">
+          <a href=""><h4>På Vegokoll.se hittar du mer om djurvänligt mode</h4></a>
+        </div>
+      {% endif %}
 
     </div>
-    <div class="col-sm-4 col-lg-3">
+    <div class="col-md-4 col-lg-3">
 
-      <!-- Meny Om oss -->
-      <ul class="nav nav-pills nav-stacked">
-        {% for item in site.data.menus[page.menu].items %}
-          <li class="{% if item.url == navurl %}active{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}"><strong>{{ item.name }}</strong></a></li>
-          {% if item.url contains navparts[1] %}
-            {% for item in item.items %}
-              <li class="{% if item.url == navurl %}active{% endif %}">
-                <a href="{{ site.baseurl }}{{ item.url }}">&nbsp;{{ item.name }}</a>
-              </li>
-              {% if item.url contains navparts[2] %}
-                {% for item in item.items %}
-                  <li class="{% if item.url == navurl %}active{% endif %}">
-                    <a href="{{ site.baseurl }}{{ item.url }}">&nbsp; -- {{ item.name }}</a>
-                  </li>
-                {% endfor %}
-              {% endif %}
-            {% endfor %}
-          {% endif %}
-        {% endfor %}
-      </ul>
+      {% if page.menu %}
+        <!-- Meny Om oss -->
+        <ul class="nav nav-pills nav-stacked">
+          {% for item in site.data.menus[page.menu].items %}
+            <li class="{% if item.url == navurl %}active{% endif %}"><a href="{{ site.baseurl }}{{ item.url }}"><strong>{{ item.name }}</strong></a></li>
+            {% if item.url contains navparts[1] %}
+              {% for item in item.items %}
+                <li class="{% if item.url == navurl %}active{% endif %}">
+                  <a href="{{ site.baseurl }}{{ item.url }}">&nbsp;{{ item.name }}</a>
+                </li>
+                {% if item.url contains navparts[2] %}
+                  {% for item in item.items %}
+                    <li class="{% if item.url == navurl %}active{% endif %}">
+                      <a href="{{ site.baseurl }}{{ item.url }}">&nbsp; -- {{ item.name }}</a>
+                    </li>
+                  {% endfor %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endif %}
+
+      {% if page.cat %}
+        <!-- Fler texter -->
+        <h4>Läs mer <!--  om {{page.cat}} --> </h4>
+        <ul class="nav nav-pills nav-stacked">
+          {% for item in site.categories.[page.cat] limit:7 %}
+            <li>
+              <a href="{{ site.baseurl }}{{ item.url }}">
+                {% if item.subtitle %}{{item.subtitle}}:{% endif %}
+                {{ item.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      {% endif %}
 
       <p>&nbsp;</p>
+
 
 
     </div>
   </div>
 </div>
+
+{% if page.categories %}
+  {% include panel/related_articles.html %}
+{% endif %}
 
 {% include modal/action.html %}

@@ -2,7 +2,7 @@
 title: Kritiserade jaktformer
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
 cat: jakt
-layout: wiki
+layout: page
 
 categories:
   - type-wiki
@@ -10,6 +10,8 @@ categories:
 
 tags:
   - vegetarianism
+
+permalink: /lar-dig-mer/jakt/kritiserade-jaktformer/
 
 ---
 

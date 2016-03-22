@@ -13,22 +13,71 @@ layout: global
       {% endif %}
 
       <h1>{{page.title}}</h1>
+      {% include misc/tags.html %}
       <p>&nbsp;</p>
 
     </div>
   </div>
 
   <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
+    <div class="col-md-8 col-md-offset-2">
 
       <p class="lead">{{page.ingress}}</p>
 
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 col-md-offset-2">
       {{content}}
+      <p>&nbsp;</p>
+
+    </div>
+    {% unless page.categories contains 'type-blixtaktion' %}
+      <div class="col-md-4 col-lg-3">
+      <!-- Fler texter -->
+        <h4>Läs mer om {{page.cat}}</h4>
+        <ul class="nav nav-pills nav-stacked">
+          {% for item in site.categories.[page.cat] limit:3 %}
+            <li>
+              <a href="{{ site.baseurl }}{{ item.url }}">
+                {% if item.subtitle %}{{item.subtitle}}:{% endif %}
+                {{ item.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+        <p>&nbsp;</p>
+      </div>
+    {% endunless %}
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
 
       <p>&nbsp;</p>
+
+      {% if page.author %}
+        <div class="row">
+          <div class="col-sm-2">
+            <img data-src="holder.js/100x100/auto/text:Bild" class="img-circle hidden-xs">
+          </div>
+          <div class="col-sm-10">
+            <a href="{{site.baseurl}}{{item.url}}">
+              <h4>{{page.author}}, {{page.job}}</h4>
+            </a>
+            <p>
+              {{ page.date | date: "%-d %B %Y" }} &nbsp;
+               <br>
+            </p>
+          </div>
+        </div>
+        <p>&nbsp;</p>
+      {% endif %}
       <!--
         <p><strong>{{page.date | date: "%-d %B %Y" }}</strong></p>
       -->
+
+
 
       {% unless page.categories contains 'type-blixtaktion' %}
         <p class="text-center">

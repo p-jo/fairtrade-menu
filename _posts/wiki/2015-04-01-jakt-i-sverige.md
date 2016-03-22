@@ -2,11 +2,15 @@
 title: Jakt i Sverige
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
 cat: jakt
-layout: wiki
+layout: page
 
 categories:
   - type-wiki
   - jakt
+
+status: none
+permalink: /lar-dig-mer/jakt/jakt-i-sverige/
+description: Wikisida (undersida till Temasida)
 
 tags:
   - vegetarianism

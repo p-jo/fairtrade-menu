@@ -1,6 +1,7 @@
 ---
 layout: wp-page
 title: Göteborg
+header: Göteborg
 menu: 9
 ingress: "Djurens Rätt Göteborg har över 3900 medlemmar varav många är ideellt engagerade för djurs rättigheter. Vi arbetar genom att sprida information på stan, bjuda på veganmat, arrangera utställningar, vegomässa, föredrag och mycket mer. Vem som helst som är intresserad är välkommen att besöka våra aktiviteter och komma med egna idéer."
 media: Bild
@@ -45,18 +46,3 @@ weight: 60
   <li><a href="#">Facebook</a></li>
   <li><a href="#">Twitter</a></li>
 </ul>
-
-
-<hr>
-
-<h2>Aktuellt</h2>
-{% for item in site.posts limit:1 %}
-  {% include node/teaser_list.html %}
-{% endfor %}
-{% for item in site.posts limit:2 offset:1 %}
-  {% include node/teaser_calendar.html %}
-{% endfor %}
-{% for item in site.posts limit:2 offset:3 %}
-  {% include node/teaser_list.html %}
-{% endfor %}
-<p><a href="#" class="btn btn-default">Visa fler</a></p>

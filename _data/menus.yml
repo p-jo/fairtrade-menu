@@ -35,7 +35,6 @@
           items:
             - name: Vegokoll-bloggen
             - name: Icke djurtestat
-              url: /engagera-dig/handla-djurvanligt/icke-djurtestat/
               items:
                 - name: Vilka krav måste märkena uppfylla?
                 - name: Standarden HCS (kosmetika)
@@ -49,11 +48,16 @@
             - name: Appar
             - name: Medlemsrabatter
         - name: Kampanjer
+          url: /engagera-dig/kampanjer/
         - name: Blixtaktioner
+          url: /engagera-dig/blixtaktioner/
+        - name: Blogg
+          url: /blogg/
     - name: Lär dig mer
       url: /lar-dig-mer/
       items:
         - name: Djurförsök
+          url: /lar-dig-mer/djurforsok/
           image: Illustration
           items:
             - name: Vad tycker Djurens Rätt?
@@ -65,6 +69,7 @@
             - name: Uppfödning, avel och hållning
             - name: Läs mer om djurförsök
         - name: Djuretik
+          url: /lar-dig-mer/djuretik/
           image: Illustration
           items:
             - name: Vad tycker Djurens Rätt?
@@ -162,9 +167,13 @@
           url: /lar-dig-mer/jakt/
           items:
             - name: Vad tycker Djurens Rätt?
+              url: /lar-dig-mer/jakt/vad-tycker-djurens-ratt/
             - name: Jakt i Sverige
+              url: /lar-dig-mer/jakt/jakt-i-sverige/
             - name: Kritiserade jaktformer
+              url: /lar-dig-mer/jakt/kritiserade-jaktformer/
             - name: Skadeskjutningar
+              url: /lar-dig-mer/jakt/skadeskjutningar/
             - name: Läs mer
         - name: Juridik
           image: Illustration
@@ -212,7 +221,9 @@
             - name: En djurvänlig turist
             - name: Hjälp djuren
         - name: Opinionsundersökningar
+          url: /lar-dig-mer/opinionsundersokningar/
         - name: Vanliga frågor
+          url: /lar-dig-mer/vanliga-fragor/
         - name: Vegokoll
 
 
@@ -240,6 +251,7 @@
   documentation: true
   items:
     - name: Vanliga frågor
+      url: /lar-dig-mer/vanliga-fragor/
     - name: Om oss
       url: /om-oss/
       items:
@@ -310,7 +322,6 @@
 - title: Övriga länkar
   description: "Direktlänkar, juridiskt etc"
   id: 6
-  documentation: true
   items:
     - name: Om cookies
       url: /om-cookies/
@@ -339,6 +350,7 @@
   id: 9
   items:
   - name: Bli aktiv
+    url: /goteborg/bli-aktiv/
   - name: Rabatter
   - name: Vegovision 2015
   - name: Verksamhetsmål!
@@ -361,3 +373,28 @@
     - name: Lediga tjänster (den typen av länkar)
     - name: Om cookies
       url: /om-cookies/
+
+- title: Följ oss sidfot
+  description: Sociala medier och andra sätt att följa organisationen
+  id: 11
+  documentation: true
+  items:
+    - name: Facebook
+      url: ""
+      id: facebook
+    - name: Instagram
+      url: ""
+      id: instagram
+    - name: Twitter
+      url: ""
+      id: twitter
+    - name: Youtube
+      url: ""
+      id: youtube
+    - name: Flickr
+      url: ""
+      id: flickr
+    - name: Nyhetsbrev
+      label: Nyhetsbrev
+      url: ""
+      id: envelope

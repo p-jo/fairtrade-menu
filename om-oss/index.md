@@ -5,8 +5,8 @@ media: Bild
 
 status: none
 type: static
-description: Statisk sida
-
+description: Statisk sida (nivå ett i menyn, med bild)
+weight: 0
 
 
 action: "Bli medlem idag"

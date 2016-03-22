@@ -11,9 +11,6 @@ categories:
   - type-blogg
   - front
 
-status: none
-permalink: /blogg/sommarturnen-borjar-snart/
-
 form:
   - id: namn
     type: text

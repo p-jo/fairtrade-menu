@@ -79,6 +79,10 @@ a h6 {
   h3 { font-size: $font-size-base * 1,5; }
 }
 
+.col-lg-4.teaser {
+  min-height: 360px;
+}
+
 .col-lg-12.teaser {
   padding-top: 150px;
 }

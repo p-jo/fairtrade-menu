@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% include panel/wp-header.html %}
+
+<main id="main">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1 class="page-header">{{page.title}}</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-7 col-md-offset-0">
+        {{content}}
+      </div>
+      <div class="col-md-5">
+        {% if page.media %}
+          <p>
+            <img data-src="holder.js/140x100/auto/text:{{page.media}}">
+          </p>
+          <p>&nbsp;</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</main>
+
+{% include panel/wp-footer.html %}

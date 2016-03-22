@@ -10,83 +10,81 @@ layout: global
 
   <div class="row">
     <div class="col-sm-12 text-center">
+      <div class="panel panel-default">
+        <div class="panel-body">
       <h1 class="page-header">{{ page.title }}</h1>
-      <p>&nbsp;</p>
+      <p class="lead">{{page.ingress}}</p>
 
-      {% for item in site.categories.type-blixtaktion limit:1%}
-        {% include node/teaser_action_small.html %}
-      {% endfor %}
-      <p>&nbsp;</p>
+
+
+      {% if page.blixtaktion %}
+        {% for item in site.categories.type-blixtaktion limit:1%}
+          {% include node/teaser_action_small.html %}
+        {% endfor %}
+      {% endif %}
     </div>
   </div>
 
+      <p>&nbsp;</p>
+    </div>
+  </div>
+</div>
+<!--
+<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-8 col-lg-7 col-md-offset-2">
+    {% if page.cat %}
+      {% for item in site.categories.[page.cat] limit:7 %}
+        {% include node/teaser.html col=4 %}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+-->
 
-      <p class="lead">{{page.ingress}}</p>
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+
       {{ content }}
+      <p>&nbsp;</p>
       {% include misc/share.html %}
+      <hr>
+    </div>
+  </div>
 
-      {% if page.form %}
-        <p>&nbsp;</p>
-        {% include form/form-horizontal.html form=page.form %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        {% for item in site.categories.[page.cat] limit:4 %}
+          {% include node/teaser_list_simple.html %}
+        {% endfor %}
+      </div>
+      <div class="col-sm-6">
+        {% for item in site.categories.[page.cat] limit:4 offset:4 %}
+          {% include node/teaser_list_simple.html %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      {% if page.categories %}
+        <h3>Vanliga frågor <!--  om {{page.cat}}--></h3>
+        {% include misc/faq.html faqId=wiki posts=site.categories.type-faq %}
       {% endif %}
 
-      <p>&nbsp;</p>
-
-      {% if page.references %}
-        <div class="panel-group" id="faq-parent-ref">
-          <div class="panel panel-transparent">
-            <div class="panel-heading">
-              <h3 class="panel-title">
-                <a data-toggle="collapse" data-parent="#faq-parent-ref" href="#faq-{% increment questionId %}">
-                  Källor >
-                </a>
-              </h3>
-            </div>
-            <div id="faq-{% increment answerId %}" class="panel-collapse collapse">
-              <div class="panel-body">
-                <ol>
-                {% for item in page.references %}
-                  <li>{{item}}</li>
-                {% endfor %}
-                </ol>
-              </div>
-            </div>
-          </div>
+      {% if page.banner %}
+        <div class="well">
+          <a href=""><h4>På Vegokoll.se hittar du mer om djurvänligt mode</h4></a>
         </div>
       {% endif %}
-
-      <h3>Vanliga frågor om {{page.cat}}</h3>
-      {% include misc/faq.html faqId=wiki posts=site.categories.type-faq %}
-
-      <p>&nbsp;</p>
-
-      <div class="well">
-        <a href=""><h4>På Vegokoll.se hittar du mer om djurvänligt mode</h4></a>
-      </div>
-
-
-    </div>
-    <div class="col-sm-4 col-lg-3">
-
-      <!-- Fler texter -->
-        <h4>Läs mer om {{page.cat}}</h4>
-        <ul class="nav nav-pills nav-stacked">
-          {% for item in site.categories.[page.cat] limit:7 %}
-            <li>
-              <a href="{{ site.baseurl }}{{ item.url }}">
-                {% if item.subtitle %}{{item.subtitle}}:{% endif %}
-                {{ item.title }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-
-      <p>&nbsp;</p>
-
     </div>
   </div>
 </div>
 
-{% include panel/related_articles.html %}
+{% if page.categories %}
+  {% include panel/related_articles.html %}
+{% endif %}

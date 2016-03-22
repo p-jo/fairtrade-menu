@@ -3,6 +3,7 @@ layout: local
 ---
 
 
+
 <div class="row">
   <div class="col-md-7 col-md-offset-0">
     {{content}}
@@ -14,5 +15,23 @@ layout: local
       </p>
       <p>&nbsp;</p>
     {% endif %}
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-7 col-md-offset-0">
+    <hr>
+
+    <h2>Aktuellt</h2>
+    <br>
+    {% for item in site.posts limit:1 %}
+      {% include node/teaser_list_simple.html %}
+    {% endfor %}
+    {% for item in site.posts limit:2 offset:1 %}
+      {% include node/teaser_calendar.html %}
+    {% endfor %}
+    {% for item in site.posts limit:2 offset:3 %}
+      {% include node/teaser_list_simple.html %}
+    {% endfor %}
+    <p><a href="#" class="btn btn-default">Visa fler</a></p>
   </div>
 </div>

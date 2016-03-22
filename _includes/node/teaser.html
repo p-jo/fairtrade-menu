@@ -2,9 +2,13 @@
   <a href="{{site.baseurl}}{{item.url}}">
 
     <h3>{{item.header}}</h3>
-    <h2>{{item.title}}</h2>
+    <h2>{% if item.subtitle %}{{item.subtitle}}:{% endif %} {{item.title}}</h2>
   </a>
+  {% if item.action %}
   <p>
     <a class="btn btn-default btn-lg" href="{{item.url}}">{{item.action}}</a>
   </p>
+  {% else %}
+    <p>{{item.excerpt}}</p>
+  {% endif %}
 </div>

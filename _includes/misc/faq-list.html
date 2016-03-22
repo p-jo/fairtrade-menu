@@ -1,0 +1,26 @@
+{% for faqCategory in include.data %}
+  <p>&nbsp;</p>
+  <h2 id="{{ faqCategory.faqId }}">{{ faqCategory.category }}</h2>
+  <p>&nbsp;</p>
+  <div class="panel-group" id="faq-parent-{{ faqCategory.faqId }}">
+    {% for faqQuestion in faqCategory.questions %}
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <a data-toggle="collapse" data-parent="#faq-parent-{{ faqCategory.faqId }}" href="#faq-{% increment questionId %}">
+              {{ faqQuestion.question }} >
+            </a>
+          </h3>
+        </div>
+        <div id="faq-{% increment answerId %}" class="panel-collapse collapse">
+          <div class="panel-body">
+            {{ faqQuestion.answer }}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {% if faqCategory.link %}
+    <a href="{{ faqCategory.url }}" class="btn btn-primary">{{ faqCategory.link }}</a>
+  {% endif %}
+{% endfor %}

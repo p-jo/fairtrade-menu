@@ -13,9 +13,11 @@ cat: jakt
 categories:
   - type-blixtaktion
   - front
+  - namninsamling
 
 status: none
 permalink: /blixtaktion/intepacirkus/
+description: Blixtaktion
 
 form:
   - id: namn

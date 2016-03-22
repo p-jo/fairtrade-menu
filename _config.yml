@@ -25,7 +25,13 @@ defaults:
       path: "wiki"
       type: "posts"
     values:
-      layout: "wiki"
+      layout: "page"
+  -
+    scope:
+      path: "topic"
+      type: "posts"
+    values:
+      layout: "page"
   -
     scope:
       path: ""
@@ -38,23 +44,26 @@ defaults:
       type: "pages"
     values:
       layout: "topic"
-      menu: 0
-      submenu: 1
   -
     scope:
       path: "engagera-dig"
       type: "pages"
     values:
-      layout: "topic"
       menu: 0
       submenu: 0
+  -
+    scope:
+      path: "om-oss"
+      type: "pages"
+    values:
+      layout: "page"
+      menu: 2
   -
     scope:
       path: ""
       type: "pages"
     values:
       layout: "page"
-      menu: 2
 
 # Multilingual settings
 # See https://github.com/tristen/multilingual

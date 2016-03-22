@@ -40,28 +40,22 @@ title: Sidmallar och menyer
 <p>&nbsp;</p>
 
 <!-- Vyer -->
-<!--
 <h3>Vyer, listor</h3>
 <p class=""></p>
 <table class="table">
   <thead>
     <tr>
       <th>Titel</th>
-      <th>Exempel-URL</th>
-      <th>Prototyp</th>
-      <th>Skisser</th>
+      <th>URL</th>
     </tr>
   </thead>
   <tbody>
-    {% for item in site.pages %}
-      {% if item.layout == 'page-wide' %}
-        <tr class="warning">
-          <td>{{item.title}}</td>
-          <td>{{item.url}}</td>
+    {% assign pages = site.pages | sort: 'weight' %}
+    {% for item in pages %}
+      {% if item.type == 'lista' %}
+        <tr class="{% if item.status %}{{item.status}}{% endif %}">
           <td><a href="{{site.baseurl}}{{item.url}}">{{item.title}}</a></td>
-          <td>
-            {% include documentation/mockups.html item=item files='skisser' %}
-          </td>
+          <td>{{item.url}}</td>
         </tr>
       {% endif %}
     {% endfor %}
@@ -70,7 +64,6 @@ title: Sidmallar och menyer
 <p>&nbsp;</p>
 
 <hr>
--->
 
 
 
@@ -80,9 +73,10 @@ title: Sidmallar och menyer
 <p class=""></p>
 <p>&nbsp;</p>
 
+<!--
 <h3>Statiska sidor</h3>
 <p class=""></p>
-
+-->
 <table class="table">
   <thead>
     <tr>
@@ -100,11 +94,12 @@ title: Sidmallar och menyer
         </tr>
       {% endif %}
     {% endfor %}
+    <!--
   </tbody>
 </table>
 <p>&nbsp;</p>
 
-<h3>Löpande texter</h3>
+<h3>Övriga innehållstyper</h3>
 <p class=""></p>
 <table class="table">
   <thead>
@@ -114,13 +109,12 @@ title: Sidmallar och menyer
     </tr>
   </thead>
   <tbody>
+  -->
     {% assign posts = site.posts | sort:categories[0] %}
     {% for item in posts %}
       {% if item.status %}
-        {% assign name = item.categories[0] | remove:'type-' %}
-
         <tr class="{% if item.status %}{{item.status}}{% endif %}">
-          <td><a href="{{site.baseurl}}{{item.url}}">{{name}}</a></td>
+          <td><a href="{{site.baseurl}}{{item.url}}">{{item.description}}</a></td>
           <td>{{item.url}}</td>
         </tr>
       {% endif %}

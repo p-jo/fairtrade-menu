@@ -3,11 +3,12 @@ title: Stark opinion mot minkfarmning
 subtitle: Opinionsundersökning
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
 cat: jakt
-layout: wiki
+layout: page
 
 categories:
   - type-wiki
   - jakt
+  - opinionsundersokning
 
 tags:
   - vegetarianism

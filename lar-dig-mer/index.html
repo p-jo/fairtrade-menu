@@ -6,15 +6,14 @@ excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis ves
 
 status: none
 type: ingang
-description: Fakta
-weight: 10
+description: Lär dig mer
+weight: 80
 
 ---
 
 <div class="container-fluid">
-
   <div class="row">
-    {% for item in site.data.menus[0].items[1].items %}
+    {% for item in site.data.menus[0].items[1].items limit:12 %}
       <div class="col-sm-4 col-md-3">
         <a href="{{ site.baseurl }}{{ item.url }}">
           <img data-src="holder.js/500x200/auto/text:illustration">
@@ -31,7 +30,17 @@ weight: 10
       {% cycle '', '', '', '<div class="clearfix visible-md visible-lg"></div>' %}
     {% endfor %}
   </div>
-
-  <hr>
-
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <ul class="nav nav-pills">
+        {% for item in site.data.menus[0].items[1].items offset:12 %}
+          <li><a href="{{ site.baseurl }}{{ item.url }}">
+            <h3>{{ item.name }} ></h3>
+          </a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </div>

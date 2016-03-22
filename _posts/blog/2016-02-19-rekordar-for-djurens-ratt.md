@@ -1,7 +1,11 @@
 ---
-title: "Rekordår för djurens rätt"
+title: "Rekordår för Djurens Rätt"
 header: "Vi växer så det knakar"
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+ingress: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+media: Bild
+cat: jakt
+
 action: "Bli medlem idag"
 action-header: Bli medlem
 action-text: "Som månadsgivare kan du som fyllt 18 år betala en valfri summa (från 35 kr) i månaden via autogiro. Med ditt regelbundna stöd skapar du en trygghet som gör att vi kan arbeta långsiktigt. Det är också det mest kostnadseffektiva sättet att stödja Djurens Rätt.
@@ -14,8 +18,13 @@ categories:
   - type-blogg
   - front
 
+tags:
+  - Djurens Rätt
+  - djurrätt
+
 status: none
 permalink: /blogg/rekordar-for-djurens-ratt/
+description: Blogginlägg (nyhet, aktivitet eller Peters blogg)
 
 form:
   - id: namn

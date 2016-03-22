@@ -2,15 +2,33 @@
 layout: global
 ---
 
-<div class="container">
-
+<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-12">
-      <h1 class="page-header">{{page.title}}</h1>
-      <p class="lead">{{page.excerpt}}</p>
+    <div class="col-sm-12 text-center">
+      <h1 class="page-header">{{ page.title }}</h1>
+      <p class="lead">{{page.ingress}}</p>
+      <p>&nbsp;</p>
     </div>
   </div>
 
-  {{content}}
+<!--
+  <div class="row">
+    {% for item in site.categories.[page.item-category] limit:1 %}
+      {% include node/teaser.html col=12 %}
+    {% endfor %}
+  </div>
+-->
+
+  <div class="row">
+    {% for item in site.categories.[page.item-category] limit:4 %}
+      {% include node/teaser.html col=6 %}
+    {% endfor %}
+  </div>
+
+  <div class="row">
+    {% for item in site.categories.[page.item-category] limit:6 offset:4 %}
+      {% include node/teaser.html col=4 %}
+    {% endfor %}
+  </div>
 
 </div>
