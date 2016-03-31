@@ -99,6 +99,8 @@ layout: global
 
 </div>
 
-{% include panel/related_articles.html %}
+{% unless page.categories contains 'type-blixtaktion' %}
+  {% include panel/related_articles.html %}
+{% endunless %}
 
 {% include modal/action.html %}

@@ -4,11 +4,11 @@
     <h3>{{item.header}}</h3>
     <h2>{% if item.subtitle %}{{item.subtitle}}:{% endif %} {{item.title}}</h2>
   </a>
+  <p>{{item.excerpt}}</p>
+
   {% if item.action %}
   <p>
     <a class="btn btn-default btn-lg" href="{{item.url}}">{{item.action}}</a>
   </p>
-  {% else %}
-    <p>{{item.excerpt}}</p>
   {% endif %}
 </div>

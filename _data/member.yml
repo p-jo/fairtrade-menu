@@ -32,12 +32,13 @@
     - Reseguide
 - cat: Styrelsearbete
   icon: "glyphicon glyphicon-lock"
+  item-icons: "fa fa-file-o"
   items:
-    - Dagordning för styrelsemöte (wordmall)
-    - Protokoll för styrelsemöte (wordmall)
-    - Konstituerande styrelsemöte (wordmall)
-    - Valberedningens arbete (pdf)
-    - Guide för styrelseledamöter (pdf)
+    - Dagordning för styrelsemöte
+    - Protokoll för styrelsemöte
+    - Konstituerande styrelsemöte
+    - Valberedningens arbete
+    - Guide för styrelseledamöter
 - cat: Riksstämmor
   items:
     - Riksstämman 2015

@@ -11,14 +11,16 @@ weight: 40
 <div class="container">
   <p>&nbsp;</p>
   <div class="row">
-    <div class="col-sm-6">
-      <h3>Blixtaktioner</h3>
+    <div class="col-md-12">
+      <h3>Kampanjer och blixtaktioner</h3>
       <br>
       {% for item in site.categories.type-blixtaktion %}
-        {% include node/teaser_list_simple.html %}
+        {% include node/teaser_action_small.html %}
       {% endfor %}
-      <p><a href="/engagera-dig/blixtaktioner/" class="btn btn-default">Alla blixtaktioner</a></p>
+      <p><a href="/engagera-dig/kampanjer/" class="btn btn-default">Alla kampanjer</a></p>
     </div>
+
+    <!--
     <div class="col-sm-6">
       <h3>Kampanjer</h3>
       <br>
@@ -27,5 +29,6 @@ weight: 40
       {% endfor %}
       <p><a href="/engagera-dig/kampanjer/" class="btn btn-default">Alla kampanjer</a></p>
     </div>
+    -->
   </div>
 </div>

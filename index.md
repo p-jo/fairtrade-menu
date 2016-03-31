@@ -6,6 +6,18 @@ weight: 0
 
 ---
 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="alert alert-info alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          Nu är det riksstämma, <a href="#">anmäl dig här</a>
+      </div>
+      <p>&nbsp;</p>
+    </div>
+  </div>
+</div>
+
 <div class="container-fluid" id="front">
 
   <div class="row">

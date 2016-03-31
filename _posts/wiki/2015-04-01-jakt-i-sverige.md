@@ -3,6 +3,8 @@ title: Jakt i Sverige
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
 cat: jakt
 layout: page
+ingress: "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper."
+media: Bild
 
 categories:
   - type-wiki
@@ -14,6 +16,16 @@ description: Wikisida (undersida till Temasida)
 
 tags:
   - vegetarianism
+
+references:
+  - Naturvårdsverket. Så används Viltvårdsfonden. Hemsida. Sidan besökt 2015-09-04.
+  -  Jägareförbundet. Senaste avskjutningsstatistiken. Hemsida. Sidan besökt 2015-09-08.
+  -  Naturvårdsverkets jaktportal. Sidan besökt 2015-09-04.
+  -  Naturvårdsverket (1999) Förteckning över godkända fångstredskap, Dnr 417- 1300-99 Nf.
+  -  Naturvårdsverket. Material och konstruktionskrav Godkänt fångstredskap nr S 15. Fångstanordning Ripsnara.
+  -  Jaktens villkor – en utredning om vissa jaktfrågor. SOU 1997:91.
+  -  Mattsson L. et al. (2008). Jakten i Sverige – Ekonomiska värden och attityder jaktåret 2005/06. Rapport från Adaptiv förvaltning av vilt och fisk, nr. 1. (Se avsnitt 4.3 Viltets jaktvärde – storlek och beståndsdelar)
+
 
 ---
 

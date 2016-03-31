@@ -9,6 +9,7 @@
         - name: Stöd oss
           url: /engagera-dig/stod-oss/
           items:
+            - name: Bli medlem
             - name: Ge en gåva
           #  - name: (Bli månadsgivare)
             - name: Starta en insamling
@@ -33,7 +34,7 @@
         - name: Handla djurvänligt
           url: /engagera-dig/handla-djurvanligt/
           items:
-            - name: Vegokoll-bloggen
+            - name: Vegokoll
             - name: Icke djurtestat
               items:
                 - name: Vilka krav måste märkena uppfylla?
@@ -42,7 +43,7 @@
                 - name: Vanliga frågor
                 - name: För företag
             - name: Pälsfri handel
-            - name: Gratis inspirationsmagasin
+            - name: inspirationsmagasinet Välj Vego!
             - name: Shop
             - name: Märkningen 100% veganskt
             - name: Appar
@@ -223,7 +224,7 @@
         - name: Opinionsundersökningar
           url: /lar-dig-mer/opinionsundersokningar/
         - name: Vanliga frågor
-          url: /lar-dig-mer/vanliga-fragor/
+          url: /vanliga-fragor/
         - name: Vegokoll
 
 
@@ -251,7 +252,12 @@
   documentation: true
   items:
     - name: Vanliga frågor
-      url: /lar-dig-mer/vanliga-fragor/
+      url: /vanliga-fragor/
+      items:
+        - name: Djurförsök
+        - name: Djuretik
+        - name: Djur i livsmedelseindustrin
+        - name: Djur i pälsindustrin
     - name: Om oss
       url: /om-oss/
       items:

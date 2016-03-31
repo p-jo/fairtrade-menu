@@ -53,19 +53,6 @@ layout: global
           <a href="" class="btn btn-primary btn-lg"  data-toggle="modal" data-target="#modalForm">{{page.action}}</a>
         </p>
       {% endif %}
-
-      <p>&nbsp;</p>
-
-      {% include misc/share.html %}
-
-      <hr>
-      <p><small>
-        {% if page.categories %}
-          Sidansvarig: Moa Richter Hagert &nbsp;&nbsp;&nbsp;
-        {% endif %}
-        Uppdaterad: 22 februari 2016
-      </small></p>
-
       <p>&nbsp;</p>
 
       {% if page.references %}
@@ -90,6 +77,18 @@ layout: global
           </div>
         </div>
       {% endif %}
+
+      {% include misc/share.html %}
+
+      <hr>
+      <p><small>
+        {% if page.categories %}
+          Sidansvarig: Moa Richter Hagert &nbsp;&nbsp;&nbsp;
+        {% endif %}
+        Uppdaterad: 22 februari 2016
+      </small></p>
+
+      <p>&nbsp;</p>
 
       {% if page.categories %}
         <h3>Vanliga frågor <!--  om {{page.cat}}--></h3>

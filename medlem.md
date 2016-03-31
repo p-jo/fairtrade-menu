@@ -17,8 +17,8 @@ weight: 50
     <div class="col-sm-6 col-md-4">
       <a href=""><h3>{{item.cat}} <span class="{{item.icon}}"></span></h3></a>
       <div class="list-group">
-        {% for item in item.items %}
-          <a href="#" class="list-group-item">{{item}}</a>
+        {% for subitem in item.items %}
+          <a href="#" class="list-group-item"><i class="{{item.item-icons}}"></i>&nbsp; {{subitem}}</a>
         {% endfor %}
       </div>
     </div>
