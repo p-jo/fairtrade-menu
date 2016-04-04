@@ -15,16 +15,6 @@ layout: local
 <div class="row">
   <div class="col-md-7 col-md-offset-0">
     {{content}}
-    <hr>
-    <div class="fb-page"
-      data-href="https://www.facebook.com/djurensrattgoteborg/"
-      data-small-header="false"
-      data-adapt-container-width="true"
-      data-hide-cover="false"
-      data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/djurensrattgoteborg/"><a href="https://www.facebook.com/djurensrattgoteborg/">djurensrattgoteborg</a></blockquote></div>
-    </div>
-    <p>&nbsp;</p>
-
   </div>
   <div class="col-md-5">
     {% if page.media %}
@@ -38,8 +28,6 @@ layout: local
 </div>
 <div class="row">
   <div class="col-md-7 col-md-offset-0">
-    <hr>
-
     <h2>Aktuellt</h2>
     <br>
     {% for item in site.posts limit:1 %}
@@ -52,5 +40,16 @@ layout: local
       {% include node/teaser_list_simple.html %}
     {% endfor %}
     <p><a href="#" class="btn btn-default">Visa fler</a></p>
+  </div>
+  <div class="col-md-5">
+    <div class="fb-page"
+      data-href="https://www.facebook.com/djurensrattgoteborg/"
+      data-small-header="false"
+      data-adapt-container-width="true"
+      data-hide-cover="false"
+      data-show-facepile="false"
+      data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/djurensrattgoteborg/"><a href="https://www.facebook.com/djurensrattgoteborg/">djurensrattgoteborg</a></blockquote></div>
+    </div>
+    <p>&nbsp;</p>
   </div>
 </div>
