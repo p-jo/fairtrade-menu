@@ -4,6 +4,29 @@ layout: global
 title: Lär dig mer
 excerpt: "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
 
+menuitems:
+  - name: Vad tycker Djurens Rätt?
+  - name: Fiskar och andra vattenlevande djur
+  - name: Förmåga till lidande hos fiskar
+  - name: Förmåga till lidande hos ryggradslösa djur
+  - name: Grisar
+  - name: Hönor & tuppar
+  - name: Kalkoner
+  - name: Kaniner
+  - name: Naturligt beteende hos kaniner
+  - name: Kor, kalvar & tjurar
+  - name: Hanteringen av mjölkkalvar
+  - name: Kycklingar
+  - name: Får och lamm
+  - name: Renar
+  - name: Bin
+  - name: Andra djur i livsmedelsindustrin
+  - name: Transport och slakt av hästar
+  - name: Transporter
+  - name: Slakt
+  - name: 'Internationellt: Slakt utan bedövning'
+  - name: Läs mer
+
 status: none
 type: ingang
 description: Lär dig mer
@@ -20,7 +43,7 @@ weight: 80
           <h3>{{item.name}} <span class="{{item.icon}}"></span></h3>
         </a>
         <div class="list-group hidden-xs">
-          {% for item in item.items limit:5 %}
+          {% for item in page.menuitems limit:5 %}
             <a href="#" class="list-group-item">{{item.name}}</a>
           {% endfor %}
         </div>
