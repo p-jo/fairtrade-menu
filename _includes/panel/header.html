@@ -1,78 +1,59 @@
 <header>
 
-  <nav class="navbar navbar-default navbar-transparent navbar-static-top" role="navigation">
+  <nav class="navbar navbar-default navbar-small" style="margin-bottom: 0;border-bottom:none;" role="navigation">
+    <div class="container">
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          {% for item in site.data.menus[2].items %}
+            <li><a href="#"><small>{{item.name}}</small></a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!--
-    Cookies
-    <div class="alert alert-warning alert-dismissible fade in" role="alert">
-      <button type="button" class="close close-cookie" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-      <p>{{site.title}} använder <a href="{{site.baseurl}}/om-cookies">cookies</a> för att förbättra för dig som besökare. &nbsp;
-        <button type="button" data-dismiss="alert" class="btn btn-default btn-sm close-cookie">Ok</button>
-      </p>
-    </div> -->
+  <nav class="navbar navbar-default" style="border-top: none;" role="navigation">
 
-
-    <div class="container-fluid">
+    <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-
-        <!--
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        -->
         <a class="navbar-brand" href="/">{{ site.title }}</a>
       </div>
 
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <!-- Collect the nav links, forms, and other content for toggling -->
-        <ul class="nav navbar-nav hidden-xs">
+        <ul class="nav navbar-nav">
+          <li class="disabled" style="font-variant:small-caps;"><a>jag vill:</a></li>
           {% for item in site.data.menus[0].items %}
             {% if item.items %}
               <li class="dropdown dropdown-large">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><h4>{{ item.name }} </h4> <span class="glyphicon  glyphicon-menu-down"></span></a>
-                  {% case forloop.index %}
-                  {% when 1 %}
-                    {% include menu/engagera-dig.html id=forloop.index %}
-                  {% when 2 %}
-                    {% include menu/lar-dig-mer.html id=forloop.index %}
-                  {% endcase %}
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>{{ item.name }} </strong></a>
+                  {% include menu/engagera-dig.html id=item.id %}
               </li>
             {% endif %}
           {% endfor %}
         </ul>
 
-        <!-- Sök -->
-        <form class="navbar-form navbar-left visible-lg" role="search">
-          <div class="form-group hidden-sm">
-            <input type="text" class="form-control input-md" placeholder="Sök">
-          </div>
-          <button type="submit" class="btn btn-default input-md"><span class="glyphicon glyphicon-search"></span></button>
-        </form>
+        <!-- Företag etc -->
 
-        <button type="button" class="btn btn-link navbar-toggle collapsed" data-toggle="modal" data-target="#menuModal">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-        <!-- Följ oss -->
-        <ul class="nav navbar-nav navbar-right visible-md visible-lg">
-          {% for item in site.data.menus[3].items %}
-          <li><a href="{{ item.url }}"><i class="fa fa-{{item.id}} fa-lg"></i></a></li>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="disabled" style="font-variant:small-caps;"><a>fairtrade för:</a></li>
+          {% for item in site.data.menus[1].items %}
+            {% if item.items %}
+              <li class="dropdown dropdown-large">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>{{ item.name }} </strong></a>
+                  {% include menu/engagera-dig.html id=item.id %}
+              </li>{{id_menu}}
+            {% endif %}
           {% endfor %}
         </ul>
-
-        <!-- Medlem -->
-        <ul class="nav navbar-nav navbar-right">
-          <li class="text-center hidden-lg"><a href=""><span class="glyphicon glyphicon-search"></span><br><small>Sök</small></a></li>
-          <li class="text-center"><a href="{{site.baseurl}}/medlem/"><span class="glyphicon glyphicon-user"></span><br><small>Medlem</small></a></li>
-          <li class="text-center hidden-xs"><a href="{{site.baseurl}}/lokalt/"><span class="glyphicon glyphicon-map-marker"></span><br><small>Lokalt</small></a></li>
-
-        </ul>
+      </div>
     </div>
   </nav>
 </header>

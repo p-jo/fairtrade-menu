@@ -3,148 +3,94 @@
   id: 0
   documentation: true
   items:
-    - name: Engagera dig
-      url: /engagera-dig/
+    - name: Lära mig mer
+      id: 0
       items:
-        - name: Stöd oss
-          url: /engagera-dig/stod-oss/
+        - name: Om Fairtrade
           items:
-            - name: Bli medlem
-            - name: Ge en gåva
-          #  - name: (Bli månadsgivare)
-            - name: Starta en insamling
-            - name: Testamentera
-            - name: Minnesgåva
-        - name: Bli aktiv
-          url: /engagera-dig/bli-aktiv/
+            - name: Vad är Fairtrade?
+            - name: Frågor & Svar
+            - name: Fairtrade Sverige
+            - name: Fairtrade internationellt
+        - name: Vad vi gör
           items:
-            - name: Bli medlem
-            - name: Engagera dig lokalt
-            - name: Nyhetsbrev
-            - name: Sommarturné
-          # - name: Gratisex av tidningen
-            - name: Beställ material
-          # - name: Beställ gratismaterial
-        - name: Handla djurvänligt
-          url: /engagera-dig/handla-djurvanligt/
+            - name: Tillsammans för Fairtrade!
+            - name: Så här möter du Fairtrade
+        - name: Fairtrade-märket
           items:
-            - name: Vegokoll
-            - name: Icke djurtestat
-            - name: Pälsfri handel
-            - name: inspirationsmagasinet Välj Vego!
-            - name: Shop
-            - name: Märkningen 100% veganskt
-            - name: Appar
-            - name: Medlemsrabatter
+            - name: Fairtrade-produkter
+            - name: Kriterier & kontroll
+        - name: Frågor & Svar
+        - name: Aktuellt
+    - name: Engagera mig
+      id: 1
+      items:
+        - name: Det här kan du göra
+          items:
+          - name: Bli ambassadör
+          - name: Aktivitetsbank
+          - name: Kommunicera Fairtrade
+          - name: Föreläsningar & utbildningar
+          - name: Ge en gåva
+        - name: Sprid Fairtrade där du är
+          items:
+            - name: Kontakta ambassadörer
+            - name: Fairtrade på jobbet
+            - name: Fairtrade för skolan
+            - name: Kyrka för Fairtrade
+        - name: Fairtrade Fokus 2016
+          items:
+            - name: Fairtrade Fokus i butiken
         - name: Kampanjer
-          url: /engagera-dig/kampanjer/
-        - name: Blixtaktioner
-          url: /engagera-dig/blixtaktioner/
-        - name: Blogg
-          url: /blogg/
-    - name: Lär dig mer
-      url: /lar-dig-mer/
-      items:
-        - name: Djurförsök
-          url: /lar-dig-mer/djurforsok/
-          image: Illustration
-        - name: Djuretik
-          url: /lar-dig-mer/djuretik/
-          image: Illustration
-        - name: Djur i livsmedelsindustrin
-          image: Illustration
-        - name: Djur i pälsindustrin
-          image: Illustration
-        - name: Djur som familjemedlemmar
-          image: Illustration
-        - name: Djur som underhållning
-          image: Illustration
-        - name: Djurs mentala förmågor
-          image: Illustration
-        - name: Djurvänlig konsument
-          image: Illustration
-        - name: Jakt
-          image: Illustration
-          url: /lar-dig-mer/jakt/
-        - name: Juridik
-          image: Illustration
-      #  - name: Samhällsbyggande och miljö
-      #    items:
-      #      - name: Vad tycker Djurens Rätt?
-      #      - name: Jordbruk och skogsbruk
-      #      - name: Vägar och järnvägar
-      #      - name: Städer och samhällen
-      #      - name: Miljö
-      #      - name: 'Vind- name: och vattenkraftverk'
-      #      - name: Läs mer
-        - name: Internationellt arbete
-          image: Illustration
-        - name: Djurvänlig turism
-          image: Illustration
-        - name: Opinionsundersökningar
-          url: /lar-dig-mer/opinionsundersokningar/
-        - name: Vanliga frågor
-          url: /vanliga-fragor/
-        - name: Vegokoll
-
-
-- title: Medlem
-  description: Resurscenter till aktiva. Frågor och svar. Medlemsservice. Länkar till lokalorganisationer.
-  id: 1
-  documentation: true
-  items:
-    - name: Medlem
-      url: /medlem/
-      icon: glyphicon glyphicon-user
-      items:
-      - name: Resurser
-      - name: Frågor och svar
-      - name: Kontakta medlemsservice
-    - name: Lokalt
-      url: /lokalt/
-      icon: glyphicon glyphicon-map-marker
-      items:
-        - name: Kontakta lokalansvariga
+        - name: Resursbank
+        - name: Beställ material
 
 - title: Sekundär meny
-  description: "Bakgrundsinformation, kontakt och information för specifika målgrupper. I huvudsak statiska sidor."
+  description: ''
   id: 2
   documentation: true
   items:
-    - name: Vanliga frågor
-      url: /vanliga-fragor/
-      items:
-        - name: Djurförsök
-        - name: Djuretik
-        - name: Djur i livsmedelseindustrin
-        - name: Djur i pälsindustrin
-    - name: Om oss
-      url: /om-oss/
-      items:
-        - name: Historia
-          url: /om-oss/historia/
-          items:
-            - name: Bildande
-          #  - name: Framgångar
-            - name: Ordförande
-        - name: Förbundsordförande
-        - name: Lediga tjänster
-    - name: Kontakt
-      items:
-        - name: För press
-        - name: För företag
-        - name: Förbundsordförande
-        - name: Förbundsstyrelsen
-        - name: Ledningsgruppen
-        - name: Personal
-      #  - name: Valberedningen
-        - name: Verksamhetsrevisorer
-        - name: Lämna formell synpunkt på vår verksamhet
-    - name: Press
     - name: Företag
+      id: 2
       items:
-        - name: Samarbetspartners
-        - name: Märkning av produkter
+        - name: Satsa på Fairtrade
+          items:
+          - name: Servera Fairtrade
+          - name: Märk din produkt med Fairtrade-märket*
+          - name: Råvaruprogram
+        - name: Resurser för företag
+          items:
+            - name: Ladda ned och använd märket
+            - name: Utbildningar för företag
+            - name: Connect
+    - name: Kommun
+      id: 3
+      items:
+        - name: Bli en Fairtrade City
+          items:
+            - name: Detta är Fairtrade City
+            - name: Bli en Fairtrade City/Fairtrade region
+        - name: Resurser för kommuner
+          items:
+            - name: Sociala krav i offentlig upphandling
+            - name: Förnya ansökan
+
+- title: Top menu
+  items:
+    - name: Aktuellt
+    - name: Resursbank
+    - name: Pressrum
+    - name: Kontakt
+    - name: Beställ material
+    - name: Sök
+
+- title: Menu banners
+  items:
+    - name: Det börjar med Fairtrade
+    - name: Fairtrade Fokus 2016
+    - name: Ditt företag och Fairtrade
+    - name: Detta är Fairtrade City
+
 
 - title: Följ oss
   description: Sociala medier och andra sätt att följa organisationen
@@ -163,10 +109,6 @@
     - name: Youtube
       url: ""
       id: youtube
-    - name: Nyhetsbrev
-      label: Nyhetsbrev
-      url: ""
-      id: envelope
 
 - title: Banners sidfot
   id: 4
@@ -257,10 +199,3 @@
     - name: Youtube
       url: ""
       id: youtube
-    - name: Flickr
-      url: ""
-      id: flickr
-    - name: Nyhetsbrev
-      label: Nyhetsbrev
-      url: ""
-      id: envelope

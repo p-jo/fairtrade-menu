@@ -1,8 +1,8 @@
 # Site settings
-title: Djurens Rätt
+title: Fairtrade Sverige
 
 email: support@rabash.se
-description: "Sveriges största djurrätts- och djurskyddsorganisation"
+description: "Det börjar med Fairtrade!"
 baseurl: ""
 twitter_username: rabashwebb
 github_username:  p-jo
@@ -14,50 +14,6 @@ permalink: pretty
 
 # Defaults
 defaults:
-  -
-    scope:
-      path: "action"
-      type: "posts"
-    values:
-      layout: "action"
-  -
-    scope:
-      path: "wiki"
-      type: "posts"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: "topic"
-      type: "posts"
-    values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "article"
-  -
-    scope:
-      path: "lar-dig-mer"
-      type: "pages"
-    values:
-      layout: "topic"
-  -
-    scope:
-      path: "engagera-dig"
-      type: "pages"
-    values:
-      menu: 0
-      submenu: 0
-  -
-    scope:
-      path: "om-oss"
-      type: "pages"
-    values:
-      layout: "page"
-      menu: 2
   -
     scope:
       path: ""

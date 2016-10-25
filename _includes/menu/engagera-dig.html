@@ -3,6 +3,22 @@
   <div class="container">
     <div class="row">
 
+      <div class="col-md-3 hidden-sm hidden-xs">
+        <div class="row">
+          <div class="col-sm-6 col-md-12">
+            <a href="#">
+              <p>
+                <br>
+                <img data-src="holder.js/550x350/auto/text:Bild">
+                <br>
+              </p>
+              <h4>{{site.data.menus[3].items[include.id].name}} <small><span class="glyphicon glyphicon-arrow-right"></span></small></h4>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
       <div class="col-md-9">
         <div class="row">
           {% for item in item.items limit:3 %}
@@ -26,7 +42,7 @@
             <ul class="nav nav-pills">
               {% for item in item.items offset:3 %}
                 <li><a href="{{ site.baseurl }}{{ item.url }}">
-                  <strong>{{ item.name }} ></strong>
+                  <strong>{{ item.name }}</strong>
                 </a></li>
               {% endfor %}
             </ul>
@@ -35,6 +51,7 @@
       </div>
 
       <!-- Banners i meny Engagera dig -->
+      <!--
       <div class="col-md-3">
         <div class="row">
           {% for item in site.data.menus[5].items %}
@@ -46,6 +63,7 @@
           {% endfor %}
         </div>
       </div>
+      -->
 
 
     </div>
