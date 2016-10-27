@@ -30,20 +30,20 @@
           - name: Bli ambassadör
           - name: Aktivitetsbank
           - name: Kommunicera Fairtrade
-          - name: Föreläsningar & utbildningar
-          - name: Ge en gåva
+          - name: Kontakta ambassadörer
         - name: Sprid Fairtrade där du är
           items:
-            - name: Kontakta ambassadörer
             - name: Fairtrade på jobbet
             - name: Fairtrade för skolan
             - name: Kyrka för Fairtrade
-        - name: Fairtrade Fokus 2016
+            - name: Föreläsningar & utbildningar
+        - name: Aktuella kampanjer
           items:
+            - name: Fairtrade Fokus 2016
             - name: Fairtrade Fokus i butiken
-        - name: Kampanjer
-        - name: Resursbank
         - name: Beställ material
+        - name: Resursbank
+        - name: Ge en gåva
 
 - title: Sekundär meny
   description: ''
