@@ -9,17 +9,16 @@
         - name: Om Fairtrade
           items:
             - name: Vad är Fairtrade?
-            - name: Frågor & Svar
+            - name: Frågor och svar
             - name: Fairtrade Sverige
             - name: Fairtrade internationellt
-        - name: Vad vi gör
-          items:
             - name: Tillsammans för Fairtrade!
-            - name: Så här möter du Fairtrade
-        - name: Fairtrade-märket
+        - name: Om hur Fairtrade fungerar
           items:
+            - name: Så här möter du Fairtrade
             - name: Fairtrade-produkter
             - name: Kriterier & kontroll
+        - name: ' '
         - name: Frågor & Svar
         - name: Aktuellt
     - name: Engagera mig
@@ -36,10 +35,12 @@
             - name: Fairtrade på jobbet
             - name: Fairtrade för skolan
             - name: Kyrka för Fairtrade
-            - name: Föreläsningar & utbildningar
-        - name: Aktuella kampanjer
+            - name: Bjud in föreläsare
+        - name: Kampanjer
           items:
-            - name: Fairtrade Fokus 2016
+            - name: Fairtrade Fokus
+            - name: Alla hjärtans dag
+            - name: World Fairtrade Challenge
             - name: Fairtrade Fokus i butiken
         - name: Beställ material
         - name: Resursbank
@@ -53,8 +54,9 @@
     - name: Företag
       id: 2
       items:
-        - name: Satsa på Fairtrade
+        - name: Ditt företag och Fairtrade
           items:
+          - name: Satsa på Fairtrade
           - name: Servera Fairtrade
           - name: Märk din produkt med Fairtrade-märket*
           - name: Råvaruprogram
@@ -69,7 +71,8 @@
         - name: Bli en Fairtrade City
           items:
             - name: Detta är Fairtrade City
-            - name: Bli en Fairtrade City/Fairtrade region
+            - name: Ansökan Fairtrade City
+            - name: Ansökan Fairtrade Region
         - name: Resurser för kommuner
           items:
             - name: Sociala krav i offentlig upphandling
